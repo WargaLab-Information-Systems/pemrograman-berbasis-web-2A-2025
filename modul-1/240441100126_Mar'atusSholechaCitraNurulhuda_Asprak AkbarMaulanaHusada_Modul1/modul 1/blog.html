@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Pribadi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white text-xl font-bold">Nama Saya</div>
+            <div class="hidden md:flex space-x-4">
+                <a href="profile.html" class="text-white hover:bg-blue-700 px-3 py-2 rounded">Profile Pribadi</a>
+                <a href="pengalaman.html" class="text-white hover:bg-blue-700 px-3 py-2 rounded">Pengalaman Kuliah</a>
+                <a href="blog.html" class="text-white hover:bg-blue-700 px-3 py-2 rounded">Blog</a>
+            </div>
+            <div class="md:hidden">
+                <button onclick="toggleMenu()" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-blue-600">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="profile.html" class="text-white block hover:bg-blue-700 px-3 py-2 rounded">Profile Pribadi</a>
+                <a href="pengalaman.html" class="text-white block hover:bg-blue-700 px-3 py-2 rounded">Pengalaman Kuliah</a>
+                <a href="blog.html" class="text-white block hover:bg-blue-700 px-3 py-2 rounded">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <section class="container mx-auto mt-8 p-6 bg-white shadow-md rounded-lg">
+        <h1 class="text-3xl font-bold mb-6 text-blue-600">Blog dan Catatan Pribadi</h1>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+            <article class="bg-gray-100 p-4 rounded-lg">
+                <h2 class="text-xl font-semibold mb-2">Artikel 1: Judul Artikel</h2>
+                <img src="image 1.png" alt="Artikel Gambar" class="w-full rounded mb-2">
+                <p class="mb-2">Kutipan inspiratif: "Dalam dunia yang semakin kompetitif ini, 
+                    pendidikan bukan hanya sekadar transfer ilmu, tetapi juga sarana untuk membentuk karakter dan 
+                    keterampilan. Melalui pendidikan, kita mengembangkan potensi diri, membangun masa depan, 
+                    dan mempersiapkan diri untuk tantangan yang lebih besar. Investasi dalam pendidikan adalah investasi 
+                    untuk masa depan yang lebih baik."</p>
+                <div class="flex justify-between items-center">
+                    <a href="https://kumparan.com/kabar-harian/24IrkfnIuxw?utm_source=Desktop&utm_medium=copy-to-clipboard&shareID=8RQGuEwOCQ0B" class="text-blue-600 hover:underline">Baca Selengkapnya</a>
+                    <span class="text-gray-500 text-sm">Tanggal Posting</span>
+                </div>
+            </article>
+
+            <article class="bg-gray-100 p-4 rounded-lg">
+                <h2 class="text-xl font-semibold mb-2">Artikel 2: Judul Artikel</h2>
+                <img src="image.png" alt="Artikel Gambar" class="w-full rounded mb-2">
+                <p class="mb-2">Kutipan inspiratif: Dalam film *Inside Out 2*, terdapat pesan yang sangat kuat tentang 
+                    pentingnya menerima setiap emosi yang kita rasakan. Salah satu kutipan inspiratif yang muncul adalah, 
+                    "Saya telah belajar bahwa setiap emosi itu baik," yang mengajarkan kita bahwa tidak ada emosi yang seharusnya dianggap negatif, 
+                    karena semuanya memiliki peran dalam membentuk siapa kita. Selain itu, ada juga pesan yang mengatakan, "Kita lebih kuat bersama,"
+                     yang mengingatkan kita bahwa menghadapi tantangan hidup lebih mudah ketika kita bekerja sama dengan emosi kita dan orang-orang di sekitar kita. 
+                     Secara keseluruhan, film ini mengajarkan kita untuk tidak menghindari atau menekan perasaan kita, tetapi untuk memahami dan menerimanya,
+                      karena melalui pemahaman tersebut kita bisa tumbuh lebih kuat dan lebih bijaksana.</p>
+                <p class="mb-2">Ringkasan pengalaman atau refleksi tentang belajar atau bekerja.</p>
+                <div class="flex justify-between items-center">
+                    <a href="https://www.disney.id/movies/inside-out-2" class="text-blue-600 hover:underline">Baca Selengkapnya</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer class="bg-blue-600 text-white text-center p-4 mt-8">
+        &copy; 2025 Citra. All Rights Reserved.
+    </footer>
+</body>
+</html>
