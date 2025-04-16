@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Pribadi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white text-xl font-bold">Nama Saya</div>
+            <div class="hidden md:flex space-x-4">
+                <a href="profile.html" class="text-white hover:bg-blue-700 px-3 py-2 rounded">Profile Pribadi</a>
+                <a href="pengalaman.html" class="text-white hover:bg-blue-700 px-3 py-2 rounded">Pengalaman Kuliah</a>
+                <a href="blog.html" class="text-white hover:bg-blue-700 px-3 py-2 rounded">Blog</a>
+            </div>
+            <div class="md:hidden">
+                <button onclick="toggleMenu()" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-blue-600">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="profile.html" class="text-white block hover:bg-blue-700 px-3 py-2 rounded">Profile Pribadi</a>
+                <a href="pengalaman.html" class="text-white block hover:bg-blue-700 px-3 py-2 rounded">Pengalaman Kuliah</a>
+                <a href="blog.html" class="text-white block hover:bg-blue-700 px-3 py-2 rounded">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Pribadi Section -->
+    <section class="container mx-auto mt-8 p-6 bg-white shadow-md rounded-lg">
+        <h1 class="text-3xl font-bold mb-6 text-blue-600">Profile Pribadi</h1>
+        
+        <table class="w-full mb-6 border-collapse">
+            <tr>
+                <td class="border p-2 font-bold">Nama</td>
+                <td class="border p-2">Mar'atus Sholecha Citra Nurul Huda</td>
+            </tr>
+            <tr>
+                <td class="border p-2 font-bold">Alamat</td>
+                <td class="border p-2">Perum Swan Menganti Mas Regency Blok E-81, Pelemwatu, Gresik</td>
+            </tr>
+            <tr>
+                <td class="border p-2 font-bold">Tempat, Tanggal Lahir</td>
+                <td class="border p-2">Jambi, Bukit Harapan, 15 AGUSTUS 2005</td>
+            </tr>
+            <tr>
+                <td class="border p-2 font-bold">Nomor HP</td>
+                <td class="border p-2">+62 822-8005-3931</td>
+            </tr>
+            <tr>
+                <td class="border p-2 font-bold">Email</td>
+                <td class="border p-2">maratus29993@gmail.com</td>
+            </tr>
+        </table>
+
+        <h2 class="text-2xl font-semibold mb-4 text-blue-500">Riwayat Pendidikan</h2>
+        <ul class="list-disc list-inside mb-6">
+            <li>Sekolah Dasar: SDN 160/V BUKIT HARAPAN, 2012 - 2018</li>
+            <li>Sekolah Menengah Pertama: SMPN 2 MERLUNG, 2018 - 2021</li>
+            <li>Sekolah Menengah Kejuruan: SMKS NU BAHRUL ULUM, 2021 - 2024</li>
+            <li>Perguruan Tinggi: UNIVERSITAS TRUNOJOYO MADURA, Program Studi Sistem Informasi, 2024 - Sekarang</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mb-4 text-blue-500">Hobi dan Minat</h2>
+        <ul class="list-disc list-inside mb-6">
+            <li>Menyanyi</li>
+            <li>Memasak</li>
+            <li>Minat Akademik : Matematika</li>
+            <li>Minat Non-Akademik : Drama</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mb-4 text-blue-500">Pengalaman Akademik dan Non-Akademik</h2>
+        <ul class="list-disc list-inside mb-6">
+            <li>Organisasi: OSIS, Sekertaris 1, 2023 - 2024</li>
+            <li>Seminar: Nama Seminar, Tahun</li>
+            <li>Lomba: Nama Lomba, Prestasi, Tahun</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mb-4 text-blue-500">Kesan Pertama, Cita-Cita, dan Harapan</h2>
+        <p class="mb-4">
+            Awal saya masuk ke dunia perkuliahan itu sangat menegangkan, hal pertama yang saya pikirkan adalah 
+            bagaimana saya bisa beradaptasi dengan suasana baru, lingkungan baru, dan teman baru. Banyak sekali 
+            hal yang saya takutkan di tempat baru ini, tapi tenyata semua yang saya takuti itu sejauh ini hanyalah 
+            angan-angan saya sendiri, dan hal yang dapat saya simpulkan adalah bahwa tidak semua harus kita pandang buruk
+            hanya karna omongan orang lain, kalau kamu belum tau bagaimana keasliannya maka tetap simpan pemikiran positif akan sesuatu itu.
+        </p>
+        <p class="mb-4">
+            Jujur saja sebenarnya cita-cita saya sangat jauh dengan hal yang saya tekuni sekarang ini. Cita-cita saya 
+            sedari dulu adalah ingin menjadi seorang penyanyi atau aktris, dengan banyak penghargaan yang dimiliki. 
+        </p>
+            <p class="mb-2">Apa yang ingin Anda capai dalam jangka pendek dan panjang? </p> 
+            <p class="mb-4">
+                Untuk saat ini yang saya inginkan hanya bisa memahami dan menguasai apa yang tengah saya pelajari saat ini.
+                Untuk kedepannya yang saya harapkan itu pastinya membanggakan ibu, juga bisa menjadi orang sukses supaya bisa membantu ibu.
+            </p>
+            <p class="mb-2">Bagaimana pendidikan Anda saat ini mendukung cita-cita tersebut?</p>
+        </p>
+        <p>
+            Mungkin pendidikan saya saat ini tidak bisa mendukung cita-cita saya, tapi saya yakin bahwa pendidikan yang saya tempuh saat ini
+            bisa sangat mendukung untuk membawa saya menjadi orang yang sukses. aamiinn...
+        </p>
+
+        <h2 class="text-2xl font-semibold my-4 text-blue-500">Keterampilan dan Perangkat Lunak</h2>
+        <form class="bg-gray-100 p-6 rounded-lg">
+            <div class="mb-4">
+                <label class="block mb-2">Bahasa Pemrograman yang Dikuasai:</label>
+                <input type="text" class="w-full p-2 border rounded" placeholder="Contoh: Python, JavaScript, Java">
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2">Bahasa Asing:</label>
+                <input type="text" class="w-full p-2 border rounded" placeholder="Contoh: Inggris, Mandarin">
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2">Perangkat Lunak yang Sering Digunakan:</label>
+                <div>
+                    <label class="inline-flex items-center mr-4">
+                        <input type="checkbox" class="form-checkbox" value="vscode">
+                        <span class="ml-2">Visual Studio Code</span>
+                    </label>
+                    <label class="inline-flex items-center mr-4">
+                        <input type="checkbox" class="form-checkbox" value="photoshop">
+                        <span class="ml-2">Adobe Photoshop</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="form-checkbox" value="office">
+                        <span class="ml-2">Microsoft Office</span>
+                    </label>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2">Sistem Operasi:</label>
+                <div>
+                    <label class="inline-flex items-center mr-4">
+                        <input type="radio" class="form-radio" name="os" value="windows">
+                        <span class="ml-2">Windows</span>
+                    </label>
+                    <label class="inline-flex items-center mr-4">
+                        <input type="radio" class="form-radio" name="os" value="macos">
+                        <span class="ml-2">macOS</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio" name="os" value="linux">
+                        <span class="ml-2">Linux</span>
+                    </label>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer class="bg-blue-600 text-white text-center p-4 mt-8">
+        &copy; 2025 Citra. All Rights Reserved.
+    </footer>
+</body>
+</html>

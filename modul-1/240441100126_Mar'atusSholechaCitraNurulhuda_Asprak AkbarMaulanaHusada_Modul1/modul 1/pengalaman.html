@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengalaman Kuliah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white text-xl font-bold">Nama Saya</div>
+            <div class="hidden md:flex space-x-4">
+                <a href="profile.html" class="text-white hover:bg-blue-700 px-3 py-2 rounded">Profile Pribadi</a>
+                <a href="pengalaman.html" class="text-white hover:bg-blue-700 px-3 py-2 rounded">Pengalaman Kuliah</a>
+                <a href="blog.html" class="text-white hover:bg-blue-700 px-3 py-2 rounded">Blog</a>
+            </div>
+            <div class="md:hidden">
+                <button onclick="toggleMenu()" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-blue-600">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="profile.html" class="text-white block hover:bg-blue-700 px-3 py-2 rounded">Profile Pribadi</a>
+                <a href="pengalaman.html" class="text-white block hover:bg-blue-700 px-3 py-2 rounded">Pengalaman Kuliah</a>
+                <a href="blog.html" class="text-white block hover:bg-blue-700 px-3 py-2 rounded">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pengalaman Kuliah Section -->
+    <section class="container mx-auto mt-8 p-6 bg-white shadow-md rounded-lg">
+        <h1 class="text-3xl font-bold mb-6 text-blue-600">Pengalaman Kuliah</h1>
+        
+        <h2 class="text-2xl font-semibold mb-4 text-blue-500">Cerita Perjalanan Kuliah Citra</h2>
+        <p class="mb-4">
+            Pada awal kuliah saya masih merasa mudah karna dalam beberapa aspek kita sebagai mahasiswa baru masih di bantu oleh beberapa kating
+            dalam hal pemilihan matakuliah, kelas, dosen. Lalu siring berjalannya waktu kini saya paham bahwa
+            ada beberapa hal yang memang saya harus siapkan dari jauh" hari karna tidak ada bantuan itu lagi.
+        </p>
+        <p class="mb-4">
+            Jelaskan mata kuliah yang paling menarik bagi saya adalah Logika Engenerring, karna saya paling suka 
+            dengan hal yang bersangkutan dengan matematika dan logika, saya merasa pede jika berhadapan dengan mata kulian
+            yang bersangkutan dengan logika.
+        </p>
+        <p class="mb-4">
+            Ada banyak tantangan yang pastinya saya hadapi dalam dunia perkuliahan ini, salah satunya adalah disaat 
+            banyak sekali tugas yang harus saya kerjakan dengan deadline yang dekat semua, dan cara saya menghadapi hal tersebut 
+            adalah dengan mengerjakannya mulai dari tugas yang saya pahami dan saya rasa mudah untuk dikerjakan, lalu lanjut untuk tugas lainnya
+            yang lebih sulit.
+        </p>
+        <p>
+            Beberapa hal yang sudah saya capai dalam dunia perkuliahan adalah, saya sudah menjadi salah satu staff dalan organisasi kampus, 
+            saya juga sering diberi kepercayaan dalam menjadi bendahara pada suatu acara, lalu akhirnya saya diamanahi untuk menjadi bendahara angkatan.
+        </p>
+
+        <h2 class="text-2xl font-semibold my-4 text-blue-500">Organisasi dan Kegiatan</h2>
+        <ul class="list-disc list-inside mb-6">
+            <li>HIMASI: Staf Departemen Akprosi</li>
+            <li>UKMFT-ITC: Staf Divisi P&K, Periode 2024 - 2025</li>
+            <li>Seminar atau Workshop: Nama, Tanggal, Kontribusi</li>
+        </ul>
+    </section>
+
+    <footer class="bg-blue-600 text-white text-center p-4 mt-8">
+        &copy; 2025 Citra. All Rights Reserved.
+    </footer>
+</body>
+</html>
