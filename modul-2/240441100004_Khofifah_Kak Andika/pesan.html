@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesan | Kenangan Rasa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 32px;
+    }
+
+    form {
+      display: flex   ;
+      flex-direction: column;
+      max-width: 400px;
+      gap: 16px;
+      align-items: center;
+    }
+
+    form input, form textarea {
+      padding: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      align-items: center;
+    }
+
+    form button {
+      padding: 8px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      align-items: center;
+    }
+
+    form button:hover {
+      background-color: #219150;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 70px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kenangan Rasa</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="pesan.html">Pesan</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 align="center">Pesan Sekarang</h2>
+    <form>
+      <input type="text" placeholder="Nama Anda" required />
+      <input type="text" placeholder="Nomor Telepon" required />
+      <textarea rows="4" placeholder="Pesanan Anda" required></textarea>
+      <button type="submit">Kirim Pesanan</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Kenangan Rasa
+  </footer>
+</body>
+</html>
