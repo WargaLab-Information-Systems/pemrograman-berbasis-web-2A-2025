@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sunrise Restaurant</title>
+    <style>
+    body {
+        margin-bottom: 50px;
+        font-family:  serif;
+        background-color: #fff;
+        color: #2c3e50;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+        background-color: #fff;
+    }
+
+    .navbar .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #11291d;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .navbar .contact-button {
+        padding: 8px 18px;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        font-size: 14px;
+        background-color: #fff;
+    }
+    .navbar ul li a:hover {
+        color: #244032;
+        font-weight: bold;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        text-align: center;
+        padding: 10px 20px;
+        margin-bottom: 90px;
+    }
+
+    .hero h1 {
+        font-size: 56px;
+        margin-bottom: 50px;
+        line-height: 1.3;
+    }
+
+    .gallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .gallery img {
+        width: 150px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
+
+    .cta-button {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 14px 30px;
+        background-color: #244032;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+        background-color: #101e17;
+        color: #4a7f62;
+    }
+
+    /* MENU */
+    .menu-item {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover {
+        transform: scale(1.05);
+    }
+
+    .menu-section .menu-item {
+        display:flex;
+        align-items: center;
+        padding: 10px;
+        gap: 20px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+    }
+
+    .menu-item img {
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .menu-section {
+        padding: 10px 20px;
+        background-color: #ffee52c9;
+    }
+
+    .menu-section h2 {
+        font-family: serif;
+        font-size: 36px;
+        margin-bottom: 50px;
+        color: #1e362a;
+        text-align: center;
+        font-weight:600;
+    }
+
+    .menu-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-column {
+        flex: 100px;
+        max-width: 1000px;
+    }
+
+    .menu-section .menu-item img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .menu-info {
+        font-family: serif;
+        flex: 1;
+        padding: 10px 15px;
+    }
+
+    .menu-info h5 {
+        margin: 0 0 5px;
+        font-size: 1.1rem;
+        color: #254133;
+    }
+
+    .menu-info p {
+        font-size: 16px;
+    }
+
+    .price {
+        padding-right: 15px;
+        font-weight:bold;
+        color: #422c08;
+    }
+
+    /* ORDER */
+    .order-section h2 {
+        font-family: serif;
+        font-size: 36px;
+        margin-bottom: 30px;
+        color: #254133;
+        text-align: center;
+        font-weight:600;
+    }
+    .order-form {
+        max-width: 600px;
+        margin: auto;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .order-form label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .order-form input, .order-form select, .order-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+    .order-form button {
+        font-family: serif;
+        background-color: #254133;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    .order-form button:hover {
+        background-color: #101e17;
+        color: #254133;
+    }
+
+  </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Sunrise</div>
+        <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order">Order</a></li>
+        </ul>
+        <button class="contact-button">Contact</button>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <h1>SIMPLE AND <br> TASTY BREAKFAST</h1>
+        <div class="gallery">
+        <img src="https://i.pinimg.com/236x/de/dd/47/dedd473da5b621426be3c69247913144.jpg" alt="Dish 1">
+        <img src="https://i.pinimg.com/474x/b8/80/f8/b880f8d78e6134118edd6bcbf701b5ae.jpg" alt="Dish 2">
+        <img src="https://i.pinimg.com/236x/15/33/16/1533161b244ef814d8d6e3ffef885b13.jpg" alt="Dish 3">
+        <img src="https://i.pinimg.com/474x/73/f9/64/73f964bfb92c746ade3d50a6079d7434.jpg" alt="Dish 4">
+        <img src="https://i.pinimg.com/474x/c0/07/7b/c0077bcdeab5d89b98553defa1c4519c.jpg" alt="Dish 5">
+        </div>
+        <a href="#order" class="cta-button">Order Now</a>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Breakfast Menu</h2>
+        <div class="menu-container">
+            <div class="menu-column">
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/736x/c4/30/f4/c430f44b8045019799fdff0b961a132b.jpg" alt="Nasi Goreng Jawa">
+                    <div class="menu-info">
+                        <h5>Nasi Goreng Jawa</h5>
+                        <p>Telur Ceplok, Ayam Goreng, Sate Ayam, Kerupuk Udang</p>
+                    </div>
+                    <span class="price">IDR 65.000</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/736x/72/47/e0/7247e0753ada5ee056c14fb491cb023b.jpg" alt="Nasi Uduk">
+                    <div class="menu-info">
+                        <h5>Nasi Uduk</h5>
+                        <p>Telur Bacem, Tempe Orek, Telur Dadar, Ayam Bacem, Bihun Goreng</p>
+                    </div>
+                    <span class="price">IDR 55.000</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/236x/da/8d/96/da8d96e31f94de350849adbee8591668.jpg" alt="Soto Ayam">
+                    <div class="menu-info">
+                        <h5>Soto Ayam</h5>
+                        <p>Nasi, Telur Rebus, Bihun, Ayam, Toge</p>
+                    </div>
+                    <span class="price">IDR 55.000</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/736x/05/7f/6a/057f6a7781a03d92095818a101144de3.jpg" alt="Nasi Kuning">
+                    <div class="menu-info">
+                        <h5>Nasi Kuning</h5>
+                        <p>Ayam Goreng, Bihun Goreng, Tempe Orek, Bakwan Sayur, Sambal Goreng Kentang</p>
+                    </div>
+                    <span class="price">IDR 75.000</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/474x/c1/11/b6/c111b6c0da1dfe8b2a475170983ab2d3.jpg" alt="Nasi Pecel">
+                    <div class="menu-info">
+                        <h5>Nasi Pecel</h5>
+                        <p>Ayam Kremes, Tahu Goreng, Tempe Goreng, Peyek Kacang</p>
+                    </div>
+                    <span class="price">IDR 65.000</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/736x/5d/80/63/5d8063cc3a30034c93d91e4886a73b29.jpg" alt="Bubur Ayam">
+                    <div class="menu-info">
+                        <h5>Bubur Ayam</h5>
+                        <p>Suwiran Ayam, Telur, Kacang Kedelai Goreng, Cakwe, Kerupuk Udang</p>
+                    </div>
+                    <span class="price">IDR 55.000</span>
+                </div>
+            </div>
+        </div>
+
+        <h2>Drinks Menu</h2>
+        <div class="menu-container">
+            <div class="menu-column">
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/236x/ef/8f/76/ef8f76582162ec4f2523b7eeee628fc7.jpg" alt="Es Teh">
+                    <div class="menu-info">
+                        <h5>Es Teh Manis</h5>
+                        <p>Teh segar dengan es batu dan gula</p>
+                    </div>
+                    <span class="price">IDR 25.000</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/236x/df/a2/5f/dfa25fa2540fa7eadd8bf7444899bf43.jpg" alt="Es Jeruk">
+                    <div class="menu-info">
+                        <h5>Es Jeruk</h5>
+                        <p>Jeruk peras dingin segar</p>
+                    </div>
+                    <span class="price">IDR 30.000</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/236x/bf/64/af/bf64af376ead3f1e1895e5740282c4f0.jpg" alt="Kopi Hitam">
+                    <div class="menu-info">
+                        <h5>Kopi Hitam</h5>
+                        <p>Kopi panas klasik tanpa gula</p>
+                    </div>
+                    <span class="price">IDR 35.000</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i.pinimg.com/236x/6a/f1/ff/6af1ff18dc3fb89d6f9a27aacbc29c95.jpg" alt="Air Putih">
+                    <div class="menu-info">
+                        <h5>Air Putih</h5>
+                        <p>Mneyehatkan</p>
+                    </div>
+                    <span class="price">IDR 25.000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <section id="order" class="order-section">
+    <h2 class="section-title">Order Here</h2>
+    <div class="order-form">
+      <form>
+        <label for="name">Nama</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="food">Pilih Makanan</label>
+        <select id="food" name="food" required>
+          <option value="none">---Tidak Memesan Makanan---</option>
+          <option value="nasigorengjawa">Nasi Goreng Jawa</option>
+          <option value="nasiuduk">Nasi Uduk</option>
+          <option value="sotoayam">Soto Ayam</option>
+          <option value="nasikuning">Nasi Kuning</option>
+          <option value="nasipecel">Nasi Pecel</option>
+          <option value="buburayam">Bubur Ayam</option>
+        </select>
+
+        <label for="drink">Pilih Minuman</label>
+        <select id="drink" name="drink" required>
+          <option value="none">---Tidak Memesan Minuman---</option>
+          <option value="estehmanis">Es Teh Manis</option>
+          <option value="esjeruk">Es Jeruk</option>
+          <option value="kopihitam">Kopi Hitam</option>
+          <option value="airputih">Air Putih</option>
+        </select>
+
+        <label for="note">Catatan Tambahan</label>
+        <textarea id="note" name="note" rows="4" placeholder="Tanpa gula? Extra topping?"></textarea>
+
+        <button type="submit">Kirim Pesanan</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
