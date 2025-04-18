@@ -1,0 +1,140 @@
+body{
+    margin: 0px;
+    padding: 30 px;
+    background-image: url(wooden-board-empty-table-top-blurred-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    background-color: #E9DFC3; 
+    padding: 0 10px;
+    display: flex;
+    padding-left:50px;
+    box-shadow: #CBA35C 0 10px;
+
+}
+.logo{
+    object-fit: cover;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+.kopi{
+    font-size: 30px;
+    margin-top: 30px;
+    display: inline;
+    font-family: "poppins";
+    margin-left:10px ;
+    color: brown;
+}
+.list{
+    display: flex;
+    margin-left:35% ;
+}
+nav ul li{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: "poppins";
+    font-weight: bold;
+    color: #222222
+}
+
+nav ul li a:hover{
+    color: #B8001F;
+}
+
+.minuman{
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #ACD3A8;
+    border-radius: 100px;
+    padding-left: 30px;
+    padding-right: 30px; 
+    box-shadow: #ACD3A8 0 0 20px;
+}
+
+.makanan{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #ACD3A8;
+    border-radius: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: #ACD3A8 0 0 20px;
+
+}
+
+#gr1{
+    width: 250px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#gr1:hover{
+    transform: translateY(-50px); 
+    transition: transform 0.5s ease;
+}
+    
+#gr2{
+    width: 250px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#gr2:hover{
+    transform: translateY(-50px); 
+    transition: transform 0.5s ease;
+}
+#minuman1{
+    color: black;
+    padding: 10px;
+    font-size: 15px;
+    font-family: "poppins";
+    text-align: left;
+    line-height: 25px;
+}
+
+#makanan1{
+    color: black;
+    padding: 10px;
+    font-size: 15px;
+    font-family: "poppins";
+    text-align: left;
+    line-height: 25px;
+}
+
+.menu{
+    text-align: center;
+    font-size: 40px;
+    font-family: "poppins";
+    padding-top: 20px;
+}
+
+.harga{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+
+}
+
+.form{
+    margin-left: 50px;
+    padding-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color:white;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffcc00;
+}
