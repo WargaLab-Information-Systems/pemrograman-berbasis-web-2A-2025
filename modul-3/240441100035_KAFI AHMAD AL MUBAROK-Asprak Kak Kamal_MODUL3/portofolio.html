@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-sans">
+    <nav class="bg-gray-700 shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-300 text-lg">Portofolio</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1 bg teal-400">
+                    <a href="#home" class="py-4 px-2 text-gray-300 font-semibold hover:text-gray-500 transition duration-300">Home</a>
+                    <a href="#about" class="py-4 px-2 text-gray-300 font-semibold hover:text-gray-500 transition duration-300">Tentang</a>
+                    <a href="#portofolio" class="py-4 px-2 text-gray-300 font-semibold hover:text-gray-500 transition duration-300">Portofolio</a>
+                    <a href="#kontak" class="py-4 px-2 text-gray-300 font-semibold hover:text-gray-500 transition duration-300">Kontak</a>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="hidden mobile-menu">
+            <ul>
+                <li><a href="#home" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+                <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Tentang</a></li>
+                <li><a href="#portofolio" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Portofolio</a></li>
+                <li><a href="#kontak" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="py-20 bg-teal-200">
+        <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 flex justify-center mb-10 md:mb-0">
+                
+                <div class="relative w-64 h-64 rounded-full overflow-hidden border-4 border-gray-500 shadow-xl hover:scale-105 transition duration-300">
+                    <img src="almet.jpg" alt="Foto Profil" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Hai,Saya <span class="text-gray-500">Kafi Ahmad</span></h1>
+                <h2 class="text-xl md:text-2xl text-gray-600 mb-6"> Web Desainer , UI/UX</h2>
+                <p class="text-gray-600 mb-8 max-w-md">Saya seorang mahasiswa semester 2 Universitas Trunojoyo Madura ,saya seorang Web Desainer pemula yang sedang belajar agar mampu membuat website yang bagus.</p>
+                <a href="#portofolio" class="bg-gray-500 hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-full transition duration-300">Lihat Portofolio</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-teal-300">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Tentang Saya</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="hack.jpg" alt="Tentang Saya" class="rounded-lg shadow-xl w-full max-w-md mx-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Identitas Saya</h3>
+                    <p class="text-gray-600 mb-6 text-justify">Saya adalah Kafi Ahmad Al Mubarok,saya seorang  mahasiswa yang berasal dari Gresik. Saat ini, saya berusia 19 tahun dan sedang menempuh pendidikan di Universitas Trunojoyo Madura.Saya dikenal sebagai pribadi yang ramah dan saya memiliki minat yang besar dalam teknologi dan olahraga.</p>
+                        
+                    <div class="mb-6">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">Keahlian</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-green-400 text-green-800 px-3 py-2 rounded-full text-sm">Fotografi</span>
+                            <span class="bg-green-400 text-green-800 px-3 py-2 rounded-full text-sm">Desain Grafis</span>
+                            <span class="bg-green-400 text-green-800 px-3 py-2 rounded-full text-sm">Editing Foto</span>
+                            <span class="bg-green-400 text-green-800 px-3 py-2 rounded-full text-sm">UI/UX Design</span>
+                            <span class="bg-green-400 text-green-800 px-3 py-2 rounded-full text-sm">Web Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="portofolio" class="py-20 bg-teal-200">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Portofolio Saya</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                
+                <div class="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                         alt="Proyek 4" 
+                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-center p-4">
+                            <h3 class="text-white text-xl font-bold mb-2">Desain Web</h3>
+                            <p class="text-gray-200 mb-4">Landing page untuk aplikasi</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                         alt="Proyek 5" 
+                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-center p-4">
+                            <h3 class="text-white text-xl font-bold mb-2">Fotografi Potret</h3>
+                            <p class="text-gray-200 mb-4">Sesi foto model profesional</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                         alt="Proyek 6" 
+                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-center p-4">
+                            <h3 class="text-white text-xl font-bold mb-2">Ilustrator</h3>
+                            <p class="text-gray-200 mb-4">Ilustrator komik dan teknik</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="py-20 bg-teal-300">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Hubungi Saya</h2>
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8">
+                        <form>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Nama</label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Nama Anda">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email Anda">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="subject">Subjek</label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="subject" type="text" placeholder="Subjek Pesan">
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Pesan</label>
+                                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4" placeholder="Tulis pesan Anda"></textarea>
+                            </div>
+                            <div class="flex items-center justify-end">
+                                <button class="bg-gray-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline transition duration-300" type="submit">Kirim Pesan</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 bg-gray-500 p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-6">Informasi Kontak</h3>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt mr-4"></i>
+                            <p>Jl. Contoh No. 123, Kota Anda</p>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-phone mr-4"></i>
+                            <p>+62 123 4567 890</p>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-envelope mr-4"></i>
+                            <p>email@contoh.com</p>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="text-xl font-bold mb-4">Media Sosial</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-white hover:text-gray-200">
+                                    <i class="fab fa-facebook-f text-xl"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-gray-200">
+                                    <i class="fab fa-twitter text-xl"></i>
+                                </a>
+                                <a href="https://www.instagram.com/ahmad_kafi0.2/" class="text-white hover:text-gray-200">
+                                    <i class="fab fa-instagram text-xl"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-gray-200">
+                                    <i class="fab fa-linkedin-in text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 Portofolio Saya. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
