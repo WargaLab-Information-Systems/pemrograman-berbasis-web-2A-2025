@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<html lang="id"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initialscale=1.0"> 
+    <title>Kafe Bahagia</title> 
+    <style> body {font-family: Arial, Helvetica, sans-serif;background: #f1faee;color: #22223b;margin: 0;padding: 0;
+        }
+        header {background: #1d3557;color: #fff; 
+        padding: 24px 0 16px 0;text-align: center;letter-spacing: 2px; 
+        }
+        nav {background: #a8dadc;display: flex;justify-content: center;gap: 32px;padding: 12px 0; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
+        } 
+nav a {     color: #1d3557; text-decoration: none; font-weight: bold; font-size: 1.1em; 
+   padding: 8px 16px;     border-radius: 20px;     transition: background 0.3s, color 0.3s; 
+        }         nav a:hover, nav a:focus {             background: #e63946;             color: #fff; 
+        } 
+        #container {             max-width: 1000px;             margin: 40px auto;             padding: 0 24px; 
+        } 
+        #menu-section {             display: flex;             flex-wrap: wrap;             gap: 32px;             justify-content: center; 
+        }         article[role="menuitem"] {             background: #fff;             border-radius: 18px;             box-shadow: 0 4px 24px rgba(0,0,0,0.08);             width: 240px;             padding: 20px;             text-align: center; 
+            transition: transform 0.2s; 
+        }         article[role="menuitem"]:hover {             transform: translateY(-8px) scale(1.03);             box-shadow: 0 8px 32px rgba(230,57,70,0.15); 
+        }         article[role="menuitem"] img {             width: 100%;             height: 140px;             object-fit: cover;             border-radius: 12px; 
+        } 
+        article[role="menuitem"] h3 {             margin: 16px 0 8px 0;             font-size: 1.2em;             color: #1d3557; 
+} article[role="menuitem"] p { font-size: 0.98em; color: #555; margin-bottom: 10px; 
+} article[role="menuitem"] span {     font-weight: bold; 
+            color: #e63946;             font-size: 1.1em; 
+        }         section[aria-label="about"], section[aria-label="order"], section[aria-label="contact"] {             background: #fff;             border-radius: 18px;             padding: 32px;             margin: 32px 0;             box-shadow: 0 4px 24px rgba(0,0,0,0.08); 
+        }         section[aria-label="order"] form {             display: flex;             flex-direction: column;             gap: 14px;             max-width: 400px;             margin: auto; 
+        }         section[aria-label="order"] input,          section[aria-label="order"] textarea {             padding: 10px;             border: 1px solid #a8dadc;             border-radius: 8px;             font-size: 1em; 
+        }         section[aria-label="order"] button {             background: #e63946;             color: #fff;             border: none;             padding: 12px;             border-radius: 8px;             font-size: 1.1em;             font-weight: bold;             cursor: pointer; 
+            transition: background 0.2s; 
+        }         section[aria-label="order"] button:hover {             background: #1d3557; 
+        } 
+@media (max-width: 700px) { 
+    #menu-section {     flex-direction: column;     align-items: center; 
+} 
+ 
+   #container {         padding: 0 8px;     } 
+        } 
+    </style> 
+</head> 
+<body> 
+    <header> 
+        <h1>Kafe Bahagia</h1> 
+        <p>Rasakan sensasi kuliner yang akan membuat anda merasakan kebahagiaan             dari setiap suapannya 
+        </p> 
+    </header> 
+    <nav> 
+        <a href="#home">Home</a> 
+        <a href="#menu">Menu</a> 
+        <a href="#about">About</a> 
+        <a href="#order">Pesan</a> 
+        <a href="#contact">Kontak</a> 
+    </nav> 
+    <div id="container"> 
+        <section id="home"> 
+            <img src="caffe bahagia.png" alt="Kafe" style="width:100%;border-radius:18px;marginbottom:32px;"> 
+        </section> 
+        <section id="menu"> 
+            <h2 style="text-align:center;margin-bottom:24px;color:#1d3557;">Menu Makanan & Minuman</h2> 
+            <div id="menu-section"> 
+                <article role="menuitem"> 
+                    <img src="nasi goreng spesial banget.png"> 
+                    <h3>Nasi Goreng Spesial</h3> 
+                    <p>Nasi goreng dengan topping ayam, telur, dan kerupuk.</p> 
+                    <span>Rp28.000</span>                 </article> 
+                <article role="menuitem"> 
+                    <img src="spaghetti carbonara.png" alt="Spaghetti"> 
+                    <h3>Spaghetti Carbonara</h3> 
+                    <p>Spaghetti creamy dengan daging asap dan keju parmesan.</p> 
+        <span>Rp35.000</span> 
+    </article> 
+       <article role="menuitem"> 
+            <img src="cappuchino.png" alt="Cappuccino"> 
+                    <h3>Cappuccino</h3> 
+                    <p>Kopi espresso dengan susu steamed dan foam lembut.</p> 
+                    <span>Rp22.000</span>                 </article> 
+                <article role="menuitem"> 
+                    <img src="matcha latte panas.png" alt="Matcha Latte"> 
+                    <h3>Matcha Latte</h3> 
+                    <p>Minuman teh hijau Jepang dengan susu segar.</p> 
+                    <span>Rp25.000</span> 
+                </article> 
+            </div> 
+        </section> 
+        <section id="about" aria-label="about"> 
+            <h2>Tentang Kami</h2> 
+            <p>Kafe Bahagia hadir dengan konsep kekinian, menyediakan menu makanan dan minuman terbaik dengan suasana nyaman untuk nongkrong, kerja, atau bersantai. Kami selalu menggunakan bahan segar dan pelayanan ramah untuk pengalaman terbaik Anda.</p> 
+        </section> 
+        <section id="order" aria-label="order"> 
+            <h2>Pemesanan Online</h2> 
+            <form> 
+                <input type="text" placeholder="Nama Lengkap" required> 
+                <input type="tel" placeholder="Nomor Telepon" required> 
+                <textarea placeholder="Pesanan Anda" rows="3" required></textarea> 
+                <button type="submit">Kirim Pesanan</button> 
+            </form> 
+        </section> 
+        <section id="contact" aria-label="contact"> 
+            <h2>Kontak</h2> 
+            <p>Alamat: Jl. Contoh No. 123, Jakarta<br> 
+            Telepon: 0822-8005-3931<br> 
+            Email: maratus29993@gmail.com</p> 
+        </section> 
+    </div> 
+</body> 
+</html> 
+ 
