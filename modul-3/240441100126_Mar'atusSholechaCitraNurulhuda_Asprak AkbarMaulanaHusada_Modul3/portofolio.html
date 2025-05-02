@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Web Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-indigo-900 text-white fixed w-full z-10">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-bold">John<span class="text-indigo-400">Doe</span></div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-indigo-300 transition">Home</a>
+                    <a href="#about" class="hover:text-indigo-300 transition">About</a>
+                    <a href="#skills" class="hover:text-indigo-300 transition">Skills</a>
+                    <a href="#projects" class="hover:text-indigo-300 transition">Projects</a>
+                    <a href="#contact" class="hover:text-indigo-300 transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-white focus:outline-none">
+                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-20 bg-gradient-to-br from-indigo-900 via-indigo-800 to-indigo-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Hello, I'm <span class="text-indigo-300">John Doe</span></h1>
+                    <h2 class="text-2xl md:text-3xl font-bold mb-6">Web Developer & UI/UX Designer</h2>
+                    <p class="text-lg mb-8 text-indigo-100">I create beautiful, functional, and responsive websites with modern technologies.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-lg font-bold transition">Hire Me</a>
+                        <a href="#projects" class="border border-indigo-300 text-indigo-300 hover:bg-indigo-300 hover:text-indigo-900 px-6 py-3 rounded-lg font-bold transition">View Work</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="/api/placeholder/400/400" alt="John Doe Profile" class="rounded-full w-64 h-64 border-4 border-indigo-300 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <img src="/api/placeholder/600/400" alt="About John Doe" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold text-indigo-900 mb-4">About Me</h2>
+                    <div class="w-20 h-1 bg-indigo-500 mb-6"></div>
+                    <p class="text-gray-700 mb-4">Hello! I'm John Doe, a passionate web developer with 5 years of experience in creating modern and responsive websites. I specialize in front-end development, with extensive knowledge of HTML, CSS, JavaScript, and various frameworks.</p>
+                    <p class="text-gray-700 mb-6">My journey in web development began during my computer science studies, and I've been in love with creating digital experiences ever since. I believe in clean, efficient code and user-centered design principles.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div>
+                            <h3 class="font-bold text-indigo-900">Name:</h3>
+                            <p class="text-gray-700">John Doe</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-indigo-900">Email:</h3>
+                            <p class="text-gray-700">john@example.com</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-indigo-900">Location:</h3>
+                            <p class="text-gray-700">Jakarta, Indonesia</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-indigo-900">Freelance:</h3>
+                            <p class="text-green-600">Available</p>
+                        </div>
+                    </div>
+                    <a href="#" class="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-lg font-bold inline-block transition">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-indigo-900 mb-4">My Skills</h2>
+                <div class="w-20 h-1 bg-indigo-500 mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-2xl mx-auto">I've worked with a variety of technologies and tools, continuously expanding my skillset to deliver the best solutions.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-indigo-100 p-3 rounded-lg mr-4">
+                            <svg class="w-6 h-6 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a8 8 0 01-3.757 6.761 1 1 0 11-1.087-1.678A6 6 0 0014.243 5.757zM5 9a1 1 0 011-1h5.5a1 1 0 110 2H6a1 1 0 01-1-1zm0 4a1 1 0 011-1h5.5a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-indigo-900">Frontend Development</h3>
+                    </div>
+                    <p class="text-gray-700">Creating responsive and interactive user interfaces with modern frameworks and libraries.</p>
+                    <div class="mt-4 space-y-3">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-indigo-900 font-medium">HTML/CSS</span>
+                                <span class="text-indigo-900 font-medium">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-indigo-900 font-medium">JavaScript</span>
+                                <span class="text-indigo-900 font-medium">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-indigo-900 font-medium">React</span>
+                                <span class="text-indigo-900 font-medium">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-indigo-100 p-3 rounded-lg mr-4">
+                            <svg class="w-6 h-6 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-indigo-900">Backend Development</h3>
+                    </div>
+                    <p class="text-gray-700">Building server-side applications, APIs, and database integrations for web applications.</p>
+                    <div class="mt-4 space-y-3">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-indigo-900 font-medium">Node.js</span>
+                                <span class="text-indigo-900 font-medium">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-indigo-900 font-medium">PHP</span>
+                                <span class="text-indigo-900 font-medium">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-indigo-900 font-medium">MySQL/MongoDB</span>
+                                <span class="text-indigo-900 font-medium">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-indigo-100 p-3 rounded-lg mr-4">
+                            <svg class="w-6 h-6 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-indigo-900">UI/UX Design</h3>
+                    </div>
+                    <p class="text-gray-700">Creating intuitive and visually appealing user interfaces and experiences.</p>
+                    <div class="mt-4 space-y-3">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-indigo-900 font-medium">Figma</span>
+                                <span class="text-indigo-900 font-medium">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-indigo-900 font-medium">Adobe XD</span>
+                                <span class="text-indigo-900 font-medium">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-indigo-900 font-medium">Responsive Design</span>
+                                <span class="text-indigo-900 font-medium">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-indigo-900 mb-4">My Projects</h2>
+                <div class="w-20 h-1 bg-indigo-500 mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-2xl mx-auto">Here are some of my recent projects. Each one presented unique challenges and opportunities for growth.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <img src="/api/placeholder/600/400" alt="E-commerce Website" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-indigo-900 mb-2">E-commerce Website</h3>
+                        <p class="text-gray-700 mb-4">A fully responsive e-commerce platform with product catalog, shopping cart, and payment integration.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">React</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Node.js</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">MongoDB</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">View Demo</a>
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <img src="/api/placeholder/600/400" alt="Portfolio Website" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-indigo-900 mb-2">Portfolio Website</h3>
+                        <p class="text-gray-700 mb-4">A modern portfolio website with responsive design, smooth animations, and dark mode toggle.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">HTML</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">CSS</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">JavaScript</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">View Demo</a>
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <img src="/api/placeholder/600/400" alt="Task Management App" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-indigo-900 mb-2">Task Management App</h3>
+                        <p class="text-gray-700 mb-4">A task management application with user authentication, task categories, and progress tracking.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">React</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Firebase</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Tailwind CSS</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">View Demo</a>
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-lg font-bold inline-block transition">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-indigo-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 bg-indigo-300 mx-auto mb-6"></div>
+                <p class="text-indigo-100 max-w-2xl mx-auto">Have a project in mind or want to discuss a potential collaboration? Feel free to reach out!</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <div class="bg-indigo-800 p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-indigo-700 p-3 rounded-lg mr-4">
+                                    <svg class="w-5 h-5 text-indigo-300" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-indigo-300 font-semibold">Email</h4>
+                                    <p class="text-white">john@example.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-indigo-700 p-3 rounded-lg mr-4">
+                                    <svg class="w-5 h-5 text-indigo-300" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-indigo-300 font-semibold">Phone</h4>
+                                    <p class="text-white">+62 123 456 7890</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-indigo-700 p-3 rounded-lg mr-4">
+                                    <svg class="w-5 h-5 text-indigo-300" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-indigo-300 font-semibold">Location</h4>
+                                    <p class="text-white">Jakarta, Indonesia</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold mt-8 mb-4">Follow Me</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-indigo-700 p-3 rounded-lg hover:bg-indigo-600 transition">
+                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="bg-indigo-700 p-3 rounded-lg hover:bg-indigo-600 transition">
+                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242
