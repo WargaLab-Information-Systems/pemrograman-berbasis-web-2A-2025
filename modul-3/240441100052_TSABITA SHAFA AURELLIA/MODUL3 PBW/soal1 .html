@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Tsabita</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans bg-pink-50 text-gray-800">
+
+<!-- Navbar -->
+<nav class="bg-pink-100 shadow sticky top-0 z-50">
+  <div class="max-w-4xl mx-auto px-3 py-3 flex justify-between items-center">
+    <a href="#" class="text-2xl font-bold text-rose-700">Tsabita</a>
+    <div class="space-x-4 hidden md:flex">
+      <a href="#home" class="text-rose-700 hover:text-rose-900">Home</a>
+      <a href="#about" class="text-rose-700 hover:text-rose-900">About</a>
+      <a href="#education" class="text-rose-700 hover:text-rose-900">Riwayat Pendidikan</a>
+      <a href="#proyek" class="text-rose-700 hover:text-rose-900">Project</a>
+      <a href="#motivation" class="text-rose-700 hover:text-rose-900">Motivasi Hidup</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Home -->
+<section id="home" class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-pink-100 to-white p-4">
+    <img src="gambar/anim.jpg" alt="Foto Home" class="w-44 h-44 rounded-full border-4 border-rose-600 shadow-lg mb-4 hover:scale-105 transition-transform">
+    <h1 class="text-3xl md:text-4xl font-bold text-rose-700">Hai, I am Tsabita</h1>
+</section>
+
+<!-- About -->
+<section id="about" class="py-16">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-rose-700 mb-10">About Me</h2>
+    <div class="flex flex-col md:flex-row items-center gap-10">
+      <img src="gambar/home.jpg" alt="About Foto" class="w-44 h-44 rounded-full border-4 border-rose-600 object-cover">
+      <div class="bg-white shadow p-6 rounded-xl w-full md:w-2/3">
+        <p>Nama: Tsabita Shafa Aurellia</p>
+        <p>Tempat,Tanggal Lahir: Lamongan, 03 Februari 2006</p>
+        <p>Alamat: Kranji, Paciran, Lamongan, Jawa Timur</p>
+        <p>Email: aurelliatsabitashafa@gmail.com</p>
+        <p>No. HP: 0813 3340 0296</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Riwayat Pendidikan -->
+<section id="education" class="py-16 bg-white">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-rose-700 mb-10">Riwayat Pendidikan</h2>
+    <div class="flex flex-col md:flex-row items-center gap-10">
+      <img src="gambar/fotohome.jpg" alt="Foto Pendidikan" class="w-44 h-44 rounded-full border-4 border-rose-600 object-cover">
+      <ul class="bg-pink-50 shadow p-6 rounded-xl space-y-4 list-none">
+        <li><span class="inline-block w-3 h-3 bg-rose-600 rounded-full mr-2"></span>MI TARBIYATUT THOLABAH</li>
+        <li><span class="inline-block w-3 h-3 bg-rose-600 rounded-full mr-2"></span>MTS TARBIYATUT THOLABAH</li>
+        <li><span class="inline-block w-3 h-3 bg-rose-600 rounded-full mr-2"></span>MA TARBIYATUT THOLABAH</li>
+        <li><span class="inline-block w-3 h-3 bg-rose-600 rounded-full mr-2"></span>Universitas Trunojoyo Madura (2024 - sekarang)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="proyek" class="py-16">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-rose-700 mb-10">Project</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Proyek 1 -->
+        <div class="bg-white shadow p-6 rounded-xl flex flex-col items-center">
+          <img src="gambar/homepage.png" alt="Website Homepage Profil" class="w-50 h-32 rounded-lg object-cover mb-4">
+          <h3 class="text-xl font-semibold text-center text-rose-600">Website ShafaResto</h3>
+        </div>
+  
+        <!-- Proyek 2 -->
+        <div class="bg-white shadow p-6 rounded-xl flex flex-col items-center">
+          <img src="gambar/unclem.png" alt="Website Kedai Uncle Muthu" class="w-50 h-32 rounded-lg object-cover mb-4">
+          <h3 class="text-xl font-semibold text-center text-rose-600">Website Kedai Uncle Muthu</h3>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+<!-- Motivasi Hidup -->
+<section id="motivation" class="py-16 bg-pink-100">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-rose-700 mb-10">Motivasi Hidup</h2>
+    <div class="flex flex-col md:flex-row items-center gap-10">
+      <img src="gambar/foto wbl.jpg" alt="Foto Motivasi" class="w-44 h-44 rounded-full border-4 border-rose-600 object-cover">
+      <div class="bg-white shadow p-6 rounded-xl text-center w-full md:w-2/3">
+        <p class="text-xl italic text-rose-600">"Never stop learning, because life never stops teaching."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-4 bg-gray-100 mt-10">
+  <p class="text-sm">&copy; 2025 Tsabita Shafa Aurellia. Semua hak dilindungi.</p>
+</footer>
+
+</body>
+</html>
