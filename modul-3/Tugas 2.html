@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portal Berita UTM</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fafc;
+      color: #1d1d1d;
+    }
+  
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('https://i.imgur.com/b9TPtrK.jpg') no-repeat center center;
+      background-size: cover;
+      height: 500px;
+      color: white;
+    }
+  
+    .hero-text {
+      text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+    }
+  
+    .navbar {
+      background-color: #002855;
+    }
+  
+    .btn-primary {
+      background-color: #c99800;
+      border: none;
+    }
+  
+    .btn-primary:hover {
+      background-color: #b38700;
+    }
+  
+    .card-title,
+    .section-heading {
+      color: #002855;
+    }
+  
+    .card {
+      background-color: white;
+    }
+  
+    footer {
+      background-color: #002855;
+    }
+  
+    .card:hover {
+      transform: translateY(-5px);
+      transition: transform 0.2s ease-in-out;
+    }
+  
+    h2, h5 {
+      font-weight: 700;
+    }
+  
+    .card-text {
+      color: #333333;
+    }
+  </style>
+  
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">UNIVERSITAS TRUNOJOYO MADURA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#berita">Berita</a></li>
+          <li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center justify-content-center text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold hero-text">Selamat Datang di Berita UTM</h1>
+      <p class="lead hero-text">Temukan informasi terkini seputar kegiatan dan prestasi kampus tercinta</p>
+    </div>
+  </section>
+
+  <!-- Berita Terbaru -->
+  <section id="berita" class="container py-5">
+    <h2 class="mb-4 text-center fw-bold section-heading">Berita Terbaru</h2>
+    <div class="row g-4">
+      <!-- Kartu Berita 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://i.imgur.com/SPQhmU1.jpg" class="card-img-top" alt="Kunjungan Dinas Pendidikan">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">UTM Terima Kunjungan Cabang Dinas Pendidikan Bangkalan</h5>
+            <p class="card-text">UTM menunjukkan komitmen dalam memperkuat jejaring dan kolaborasi pendidikan menengah di Madura.</p>
+            <p class="text-muted small">28 April 2025</p>
+            <a href="https://www.trunojoyo.ac.id/utm-terima-kunjungan-cabang-dinas-pendidikan-bangkalan-dorong-peningkatan-akses-ke-perguruan-tinggi/" target="_blank" class="btn btn-primary mt-auto">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kartu Berita 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://i.imgur.com/FZCMLoP.jpg" class="card-img-top" alt="Akreditasi Klinik">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Klinik UTM Jalani Proses Akreditasi dari LPA ASKIN</h5>
+            <p class="card-text">Klinik Pratama UTM meningkatkan mutu pelayanan kesehatan melalui proses akreditasi nasional.</p>
+            <p class="text-muted small">25 April 2025</p>
+            <a href="https://www.trunojoyo.ac.id/klinik-pratama-universitas-trunojoyo-madura-jalani-proses-akreditasi-oleh-tim-surveyor-dari-lpa-askin/" target="_blank" class="btn btn-primary mt-auto">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kartu Berita 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://i.imgur.com/poAaYHm.jpg" class="card-img-top" alt="Penghargaan Halal Matric Award">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">UTM Raih Penghargaan Platinum & Bronze di Halal Matric Award</h5>
+            <p class="card-text">Prestasi membanggakan kembali ditorehkan UTM di ajang nasional bergengsi tahun ini.</p>
+            <p class="text-muted small">21 April 2025</p>
+            <a href="https://www.trunojoyo.ac.id/universitas-trunojoyo-madura-raih-penghargaan-bergengsi-platinum-dan-bronze-di-ajang-brawijaya-halal-matric-award-2025/" target="_blank" class="btn btn-primary mt-auto">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program Unggulan -->
+<section id="program" class="py-5" style="background-color: #ffffff;">
+    <div class="container">
+      <h2 class="mb-4 text-center fw-bold text-primary">Program Unggulan UTM</h2>
+      <div class="row g-4">
+  
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Kampus Merdeka</h5>
+              <p class="card-text">Memberikan kesempatan belajar di luar kampus melalui magang, studi independen, pertukaran pelajar, dan proyek desa guna menyiapkan karier masa depan mahasiswa.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Riset & Inovasi</h5>
+              <p class="card-text">Fokus pada pengembangan riset unggulan berbasis potensi lokal Madura serta inovasi teknologi tepat guna yang berdampak pada masyarakat.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Wirausaha Mahasiswa</h5>
+              <p class="card-text">Mendorong jiwa entrepreneur sejak dini melalui pelatihan, inkubasi bisnis, hingga akses permodalan dan mentoring dari dosen berpengalaman.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Digitalisasi & Teknologi</h5>
+              <p class="card-text">Membangun ekosistem digital kampus dengan sistem informasi terintegrasi dan pemanfaatan teknologi dalam proses akademik dan layanan publik.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Internasionalisasi Kampus</h5>
+              <p class="card-text">Program pertukaran mahasiswa, dosen, dan publikasi internasional guna meningkatkan daya saing UTM di tingkat global.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Pengabdian Masyarakat</h5>
+              <p class="card-text">Mengintegrasikan pembelajaran dengan aksi nyata untuk membantu menyelesaikan permasalahan sosial dan ekonomi di masyarakat Madura.</p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer id="kontak" class="text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 Universitas Trunojoyo Madura. Semua hak dilindungi.</p>
+      <p class="mb-0">Email: UTM@trunojoyo.ac.id | Telp: +62811-3333-0046</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
