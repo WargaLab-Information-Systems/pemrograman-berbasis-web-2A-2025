@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berita Kampus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#F9F9F4] text-[#1A3C63] font-sans">
+    <header class="bg-[#B0C4DE] border-b shadow-sm sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-[#1A3C63]">Berita Kampus</h1>
+        <nav class="space-x-6 text-sm font-medium">
+          <a href="#home" class="text-[#1A3C63] hover:text-[#4E8B8A]">Beranda</a>
+          <a href="#berita" class="text-[#1A3C63] hover:text-[#4E8B8A]">Berita</a>
+          <a href="#tentang" class="text-[#1A3C63] hover:text-[#4E8B8A]">Tentang Kami</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="relative bg-[#1A3C63] text-white h-[400px] flex items-center justify-center text-center">
+      <img src="https://pif.trunojoyo.ac.id/wp-content/uploads/universitas-trunojoyo-madura-1.jpg" alt="Hero" class="absolute inset-0 w-full h-full object-cover opacity-30">
+      <div class="relative z-10 max-w-3xl mx-auto px-4">
+        <h2 class="text-4xl font-extrabold mb-4">Kabar Terkini Kampus UTM!</h2>
+        <p class="text-lg">Menampilkan berita terbaru dari mahasiswa dan dosen, acara penting, dan penelitian yang menarik.</p>
+      </div>
+    </section>
+
+    <section id="berita" class="max-w-7xl mx-auto px-4 py-12">
+      <h3 class="text-2xl font-bold text-[#1A3C63] mb-6">Berita Terbaru</h3>
+      <div class="space-y-6">
+        <div class="flex flex-col md:flex-row bg-[#B0C4DE] rounded-xl shadow hover:shadow-md overflow-hidden">
+          <img src="https://www.trunojoyo.ac.id/wp-content/uploads/2025/04/DSC_4599-2048x1184.jpg" class="w-full md:w-64 h-48 md:h-auto object-cover" />
+          <div class="p-6">
+            <a href="https://www.trunojoyo.ac.id/utm-terima-kunjungan-cabang-dinas-pendidikan-bangkalan-dorong-peningkatan-akses-ke-perguruan-tinggi/" 
+            class="text-xl font-semibold text-[#1A3C63] hover:text-blue-700 mb-2">UTM Terima Kunjungan Cabang Dinas Pendidikan Bangkalan, Dorong Peningkatan Akses ke Perguruan Tinggi</a>
+            <p class="text-sm text-[#1A3C63] mb-2">28 April 2025</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row bg-[#B0C4DE] rounded-xl shadow hover:shadow-md overflow-hidden">
+          <img src="https://www.trunojoyo.ac.id/wp-content/uploads/2025/04/klinik.jpg" class="w-full md:w-64 h-48 md:h-auto object-cover" />
+          <div class="p-6">
+            <a href="https://www.trunojoyo.ac.id/klinik-pratama-universitas-trunojoyo-madura-jalani-proses-akreditasi-oleh-tim-surveyor-dari-lpa-askin/" 
+            class="text-xl font-semibold text-[#1A3C63] hover:text-blue-700">Klinik Pratama Universitas Trunojoyo Madura Jalani Proses Akreditasi oleh Tim Surveyor dari LPA ASKIN</a>
+            <p class="text-sm text-[#1A3C63] mb-2">25 April 2025</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row bg-[#B0C4DE] rounded-xl shadow hover:shadow-md overflow-hidden">
+          <img src="https://www.trunojoyo.ac.id/wp-content/uploads/2025/04/DSC_4323-2048x1365.jpg" class="w-full md:w-64 h-48 md:h-auto object-cover" />
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-[#1A3C63] hover:text-blue-700 mb-2">UTM Resmikan 10 Instalasi Biogas Sistema di Pamekasan, Dorong Energi Ramah Lingkungan dari Limbah Ternak</h4>
+            <p class="text-sm text-[#1A3C63] mb-2">25 April 2025</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tentang" class="bg-[#B0C4DE] text-[#1A3C63] py-12">
+      <div class="max-w-7xl mx-auto px-4">
+        <h3 class="text-2xl font-bold mb-6 text-center">Tentang Kami</h3>
+        <div class="bg-white rounded-xl p-6 text-justify shadow-md">
+          <p class="text-lg mb-4">
+            Berita Kampus ini adalah portal berita yang menyajikan informasi terbaru seputar dunia kampus, mulai dari acara, prestasi mahasiswa, penelitian, hingga kegiatan lainnya yang berkaitan dengan kehidupan kampus.
+          </p>
+          <p class="text-lg mb-4">
+            Kami bertujuan untuk menyediakan informasi yang relevan dan berguna bagi seluruh sivitas akademika, dengan penyajian yang menarik dan mudah dipahami.
+          </p>
+        </div>
+    
+        <div class="my-12">
+          <hr class="border-t-2 border-white/70">
+        </div>
+    
+      </div>
+    </section>
+    
+    <section id="kontak" class="bg-white text-[#1A3C63] py-12">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="bg-[#B0C4DE] rounded-xl p-8 shadow-md">
+          <div class="flex flex-wrap justify-between gap-6">
+    
+            <!-- Logo -->
+            <div class="w-full sm:w-1/4">
+              <img src="utm.png" alt="Logo UTM" class="w-30 mb-4">
+            </div>
+    
+            <!-- Kontak -->
+            <div class="w-full sm:w-1/4">
+              <h3 class="text-lg font-semibold mb-2">KONTAK</h3>
+              <p>📞 031-3011146</p>
+              <p>📱 +62811-3333-0046</p>
+              <p class="mt-2">📧 Email:<br>
+                <a href="mailto:humas@trunojoyo.ac.id" class="underline text-blue-800">humas@trunojoyo.ac.id</a>
+              </p>
+            </div>
+    
+            <!-- Alamat -->
+            <div class="w-full sm:w-1/4">
+              <h3 class="text-lg font-semibold mb-2">ALAMAT KANTOR</h3>
+              <p>Jl. Raya Telang, PO BOX 02</p>
+              <p>Kec. Kamal, Bangkalan</p>
+              <p>Kodepos: 69162</p>
+            </div>
+    
+            <!-- Media Sosial -->
+            <div class="w-full sm:w-1/4">
+              <h3 class="text-lg font-semibold mb-2">OFFICIAL AKUN</h3>
+              <div class="flex space-x-4">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/1384/1384063.png" alt="Instagram"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/1384/1384060.png" alt="YouTube"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/1384/1384062.png" alt="Facebook"></a>
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="text-center text-sm mt-6 border-t border-[#1A3C63]/30 pt-4">
+            © 2023 Universitas Trunojoyo Madura. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="bg-[#B0C4DE] text-[#1A3C63] py-6">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <p>&copy; 2025 Berita Kampus. All rights reserved.</p>
+      </div>
+    </footer>
+    
+</body>
+</html>
+  </body>
+</html>
