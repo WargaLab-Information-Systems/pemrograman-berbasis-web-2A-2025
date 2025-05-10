@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berita Kampus</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+          padding: '16px',
+        },
+        extend: {
+          colors: {
+            primary: '#6366f1',
+            dark: '#0f172a',
+            secondary: '#64748b',
+          },
+          screens: {
+            '2xl': '1320px',
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body>
+
+  <!-- header start -->
+  <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <div class="container">
+      <div class="flex items-center justify-between relative">
+        <div class="px-4">
+          <a href="#home" class="font-bold uppercase text-lg text-primary block py-6">ubdy news</a>
+        </div>
+        <div class="flex items-center px-4">
+          <!-- hamburger menu -->
+          <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+            <i id="icon-open" class="bi bi-list text-5xl"></i>
+            <i id="icon-close" class="bi bi-x-lg text-5xl hidden"></i>
+          </button>
+          <!-- navigasi menu-->
+          <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg
+          max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full
+          lg:shadow-none lg:rounded-none">
+            <ul class="block lg:flex">
+              <li><a href="#home" class="text-base text-dark py-2 mx-8 flex hover:text-primary">Beranda</a></li>
+              <li><a href="#berita" class="text-base text-dark py-2 mx-8 flex hover:text-primary">Berita Terkini</a></li>
+              <li><a href="#kegiatan" class="text-base text-dark py-2 mx-8 flex hover:text-primary">Kegiatan</a></li>
+              <li><a href="#prestasi" class="text-base text-dark py-2 mx-8 flex hover:text-primary">Prestasi</a></li>
+              <li><a href="#fakultas" class="text-base text-dark py-2 mx-8 flex hover:text-primary">Fakultas</a></li>
+              <li><a href="#contact" class="text-base text-dark py-2 mx-8 flex hover:text-primary">Kontak</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+  
+  <!-- hero section start -->
+  <section id="home" class="pt-36">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full self-center px-4 lg:w-1/2">
+          <h1 class="text-base font-semibold text-primary uppercase md:text-xl">
+            Selamat Datang di<span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">UBDY</span>
+          </h1>
+          <h2 class="font-medium text-dark text-lg mb-5 up lg:text-2xl">
+            Portal Berita | Informasi Kampus | Kegiatan Mahasiswa
+          </h2>
+          <p class="font-medium text-secondary mb-10 leading-relaxed">
+            Dapatkan informasi terbaru seputar kegiatan akademik, prestasi mahasiswa, dan berbagai event menarik di kampus kita.
+          </p>
+          <a href="#berita" class="text-base font-semibold text-white bg-primary
+          py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+            Baca Berita Terbaru
+          </a>
+        </div>
+        <!-- foto kampus  -->
+        <div class="w-full self-end px-4 lg:w-1/2">
+          <div class="mt-10">
+            <img src="gambar/kampus.png" alt="Kampus" class="max-w-full mx-auto">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero section end -->
+
+  <!-- about section start -->
+  <section id="berita" class="pt-36 pb-32">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <!-- tentang kami -->
+        <div class="w-full px-4 mb-10 lg:w-1/2">
+          <h4 class="font-bold uppercase text-primary text-lg mb-3">
+            Berita Terkini
+          </h4>
+          <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">
+            Informasi Terbaru dari <span class="text-primary">Kampus</span>
+          </h2>
+          <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
+            Kami menyajikan berita dan informasi terbaru seputar kegiatan akademik, pengumuman penting, dan berbagai event di kampus untuk memastikan Anda selalu update.
+          </p>
+        </div>
+        <!-- medsos -->
+        <div class="w-full px-4 lg:w-1/2">
+          <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl lg:pt-10">
+            Ikuti Kami
+          </h2>
+          <p class="font-medium text-base text-secondary mb-6 lg:text-lg">
+            Dapatkan update terbaru dari kami melalui media sosial
+          </p>
+          <div class="flex items-center">
+            <!-- youtube -->
+            <a href="https://www.youtube.com/@NotFound-444-01" target="_blank" class="w-9 h-9 mr-3 flex justify-center items-center
+            grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100">
+              <i class="bi bi-youtube text-3xl text-red-600"></i>
+            </a>
+            <!-- instagram -->
+            <a href="https://www.instagram.com/bang_edy7" target="_blank" class="w-9 h-9 mr-3 flex justify-center items-center
+            grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100">
+              <i class="bi bi-instagram text-3xl text-pink-600"></i>
+            </a>
+            <!-- tiktok -->
+            <a href="https://www.tiktok.com/@un.kn0wn_9" target="_blank" class="w-9 h-9 mr-3 flex justify-center items-center
+            grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100">
+              <i class="bi bi-tiktok text-3xl text-slate-600"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about section end -->
+
+  <!-- kegiatan section start -->
+  <section id="kegiatan" class="pt-36 pb-16 bg-slate-100">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="max-w-xl mx-auto text-center mb-16">
+          <h4 class="font-semibold text-lg text-primary mb-2 uppercase">Kegiatan</h4>
+          <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Event Kampus</h2>
+          <p class="font-medium text-md text-secondary md:text-lg">
+            Berbagai kegiatan dan event menarik yang akan dan telah berlangsung di kampus
+          </p>
+        </div>
+      </div>
+
+      <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+        <!-- kegiatan 1 -->
+        <div class="mb-12 p-4 md:w-1/2">
+          <div class="rounded-md shadow-md overflow-hidden">
+            <img src="gambar/k1.png" alt="Seminar Nasional" class="w-full">
+          </div>
+          <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Seminar Nasional Teknologi</h3>
+          <p class="font-medium text-base text-secondary">
+            Fakultas Teknik mengadakan seminar nasional dengan tema "Inovasi Teknologi di Era Digital" dengan
+            menghadirkan pembicara dari berbagai industri teknologi terkemuka.
+          </p>
+        </div>
+        <!-- kegiatan 2 -->
+        <div class="mb-12 p-4 md:w-1/2">
+          <div class="rounded-md shadow-md overflow-hidden">
+            <img src="gambar/k2.png" alt="Kompetisi Debat" class="w-full">
+          </div>
+          <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Kompetisi Debat Antar Universitas</h3>
+          <p class="font-medium text-base text-secondary">
+            Tim debat kampus kita berhasil meraih juara kedua dalam kompetisi debat tingkat nasional
+            yang diselenggarakan di Jakarta minggu lalu.
+          </p>
+        </div>
+        <!-- kegiatan 3 -->
+        <div class="mb-12 p-4 md:w-1/2">
+          <div class="rounded-md shadow-md overflow-hidden">
+            <img src="gambar/k3.png" alt="Workshop Kewirausahaan" class="w-full">
+          </div>
+          <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Workshop Kewirausahaan</h3>
+          <p class="font-medium text-base text-secondary">
+            Fakultas Ekonomi dan Bisnis menggelar workshop kewirausahaan dengan mengundang para pengusaha sukses 
+            untuk berbagi pengalaman dengan mahasiswa.
+          </p>
+        </div>
+        <!-- kegiatan 4 -->
+        <div class="mb-12 p-4 md:w-1/2">
+          <div class="rounded-md shadow-md overflow-hidden">
+            <img src="gambar/k4.png" alt="Pentas Seni" class="w-full">
+          </div>
+          <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Pentas Seni Budaya</h3>
+          <p class="font-medium text-base text-secondary">
+            Unit Kegiatan Mahasiswa Seni menyelenggarakan pentas seni tahunan yang menampilkan 
+            beragam pertunjukan dari berbagai seni dan budaya nusantara.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- kegiatan section end -->
+
+  <!-- prestasi section start -->
+  <section id="prestasi" class="pt-36 pb-32 bg-slate-700">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="mx-auto text-center mb-16">
+          <h4 class="font-semibold uppercase text-lg text-primary mb-2">Prestasi</h4>
+          <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">Pencapaian Kampus</h2>
+          <p class="font-medium text-md text-secondary md:text-lg">
+            Berbagai prestasi membanggakan yang telah diraih oleh civitas akademika
+          </p>
+        </div>
+      </div>
+
+      <!-- prestasi -->
+      <div class="w-full px-4">
+        <div class="flex flex-wrap items-center justify-center">
+          <div class="mx-4 py-4 text-center text-white">
+            <div class="text-4xl font-bold text-primary mb-2">250+</div>
+            <p>Publikasi Ilmiah</p>
+          </div>
+          <div class="mx-4 py-4 text-center text-white">
+            <div class="text-4xl font-bold text-primary mb-2">45</div>
+            <p>Penghargaan Nasional</p>
+          </div>
+          <div class="mx-4 py-4 text-center text-white">
+            <div class="text-4xl font-bold text-primary mb-2">12</div>
+            <p>Penghargaan Internasional</p>
+          </div>
+          <div class="mx-4 py-4 text-center text-white">
+            <div class="text-4xl font-bold text-primary mb-2">85%</div>
+            <p>Tingkat Penyerapan Lulusan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- prestasi section end -->
+
+  <!-- fakultas section start -->
+  <section id="fakultas" class="pt-36 pb-32 bg-slate-100">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="max-w-xl mx-auto text-center mb-16">
+          <h4 class="font-semibold uppercase text-lg text-primary mb-2">Fakultas</h4>
+          <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Berita Fakultas</h2>
+          <p class="font-medium text-md text-secondary md:text-lg">
+            Informasi terbaru dari berbagai fakultas di kampus kita
+          </p>
+        </div>
+      </div>
+      <!-- berita fakultas -->
+      <div class="flex flex-wrap">
+        <!-- berita 1 -->
+        <div id="teknik" class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div class="bg-white rounded-xl shadow-lg mb-10">
+            <img src="gambar/teknik.jpeg" alt="Fakultas Teknik" class="w-[360px] h-[200px] object-cover rounded-lg">
+            <div class="py-8 px-6">
+              <h3 class="mb-3 font-semibold text-xl text-dark hover:text-primary truncate">
+                Mahasiswa Teknik Informatika Raih Juara Hackathon Nasional
+              </h3>
+              <p class="font-medium text-base text-secondary mb-6">
+                Tim mahasiswa Teknik Informatika berhasil memenangkan kompetisi hackathon nasional
+                dengan inovasi aplikasi kesehatan berbasis AI
+              </p>
+              <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4
+              rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <!-- berita 2 -->
+        <div id="ekonomi" class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div class="bg-white rounded-xl shadow-lg mb-10">
+            <img src="gambar/ekonomi.jpeg" alt="Fakultas Ekonomi" class="w-[360px] h-[200px] object-cover rounded-lg">
+            <div class="py-8 px-6">
+              <h3 class="mb-3 font-semibold text-xl text-dark hover:text-primary truncate">
+                Fakultas Ekonomi Jalin Kerjasama dengan Industri Perbankan
+              </h3>
+              <p class="font-medium text-base text-secondary mb-6">
+                Penandatanganan MoU antara Fakultas Ekonomi dengan tiga bank nasional
+                untuk program magang dan penempatan kerja lulusan
+              </p>
+              <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4
+              rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <!-- berita 3 -->
+        <div id="kedokteran" class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+            <img src="gambar/kedokteran.jpeg" alt="Fakultas Kedokteran" class="w-[360px] h-[200px] object-cover rounded-lg">
+            <div class="py-8 px-6">
+              <h3 class="mb-3 font-semibold text-xl text-dark hover:text-primary truncate">
+                Fakultas Kedokteran Adakan Bakti Sosial di Desa Terpencil
+              </h3>
+              <p class="font-medium text-base text-secondary mb-6">
+                Dosen dan mahasiswa Fakultas Kedokteran mengadakan pengabdian masyarakat dengan
+                melakukan pemeriksaan kesehatan gratis di desa terpencil
+              </p>
+              <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4
+              rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- fakultas section end -->
+
+  <!-- contact section start -->
+  <section id="contact" class="pt-36 pb-32">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="max-w-xl mx-auto text-center mb-16">
+          <h4 class="font-semibold uppercase text-lg text-primary mb-2">Kontak</h4>
+          <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Hubungi Kami</h2>
+          <p class="font-medium text-md text-secondary md:text-lg">
+            Kirimkan pertanyaan, saran, atau info berita terbaru dari kampus Anda
+          </p>
+        </div>
+      </div>
+
+      <form>
+        <div class="w-full lg:w-2/3 lg:mx-auto">
+          <div class="w-full px-4 mb-8">
+            <label for="name" class="text-base font-bold text-primary">Nama</label>
+            <input id="name" type="text" class="w-full bg-slate-200 text-dark p-3 rounded-md
+            focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+          </div>
+          <div class="w-full px-4 mb-8">
+            <label for="email" class="text-base font-bold text-primary">E-Mail</label>
+            <input id="email" type="email" class="w-full bg-slate-200 text-dark p-3 rounded-md
+            focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+          </div>
+          <div class="w-full px-4 mb-8">
+            <label for="message" class="text-base font-bold text-primary">Pesan</label>
+            <textarea id="message" type="message" class="w-full bg-slate-200 text-dark p-3 rounded-md
+            focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+          </div>
+          <div class="w-full px-4 mb-8">
+            <button type="submit" class="bg-primary text-white py-2 px-4 rounded-lg font-semibold text-base
+            hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out">Kirim Pesan
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- contact section end -->
+
+  <!-- footer start -->
+  <footer class="bg-dark pt-24 pb-12">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+          <h2 class="font-bold text-4xl text-white mb-5">UBDY NEWS</h2>
+          <h3 class="font-bold text-2xl mb-5">Hubungi Kami</h3>
+          <p>ubdynews@ubdy.ac.id</p>
+          <p>Jl. Raya Telang, Perumahan Telang Indah, Telang, Kec. Kamal, Kabupaten Bangkalan, Jawa Timur 69162</p>
+        </div>
+        <!-- kategori -->
+        <div class="w-full px-4 mb-12 md:w-1/3">
+          <h3 class="font-semibold text-xl text-white mb-5 pt-10">Kategori Berita</h3>
+          <ul class="text-slate-300">
+            <li><a href="#teknik" class="inline-block text-base hover:text-primary mb-3">Fakultas Teknik</a></li>
+            <li><a href="#ekonomi" class="inline-block text-base hover:text-primary mb-3">Fakultas Ekonomi</a></li>
+            <li><a href="#kedokteran" class="inline-block text-base hover:text-primary mb-3">Fakultas Kedokteran</a></li>
+          </ul>
+        </div>
+        <!-- nav tautan -->
+        <div class="w-full px-4 mb-12 md:w-1/3">
+          <h3 class="font-semibold text-xl text-white mb-5 pt-10">Tautan</h3>
+          <ul class="text-slate-300">
+            <li><a href="#home" class="inline-block text-base hover:text-primary mb-3">Beranda</a></li>
+            <li><a href="#berita" class="inline-block text-base hover:text-primary mb-3">Berita Terkini</a></li>
+            <li><a href="#kegiatan" class="inline-block text-base hover:text-primary mb-3">Kegiatan</a></li>
+            <li><a href="#prestasi" class="inline-block text-base hover:text-primary mb-3">Prestasi</a></li>
+            <li><a href="#fakultas" class="inline-block text-base hover:text-primary mb-3">Fakultas</a></li>
+            <li><a href="#contact" class="inline-block text-base hover:text-primary mb-3">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- medsos -->
+      <div class="w-full pt-10 border-t border-slate-700">
+        <div class="flex items-center justify-center mb-5">
+          <!-- youtube -->
+          <a href="https://www.youtube.com/@NotFound-444-01" target="_blank" class="w-9 h-9 mr-3 flex justify-center items-center
+          grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100">
+            <i class="bi bi-youtube text-3xl text-red-600"></i>
+          </a>
+          <!-- instagram -->
+          <a href="https://www.instagram.com/bang_edy7" target="_blank" class="w-9 h-9 mr-3 flex justify-center items-center
+          grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100">
+            <i class="bi bi-instagram text-3xl text-pink-600"></i>
+          </a>
+          <!-- tiktok -->
+          <a href="https://www.tiktok.com/@un.kn0wn_9" target="_blank" class="w-9 h-9 mr-3 flex justify-center items-center
+          grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100">
+            <i class="bi bi-tiktok text-3xl text-slate-600"></i>
+          </a>
+        </div>
+        <!-- copyright -->
+        <p class="font-medium text-xs text-slate-500 text-center">
+          Dibuat dengan oleh <span class="font-bold text-white">UBDY</span>
+          Menggunakan <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a>
+          dan <a href="https://getbootstrap.com" target="_blank" class="font-bold text-primary">Bootstrap</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <script src="script.js"></script>
+</body>
+</html>
