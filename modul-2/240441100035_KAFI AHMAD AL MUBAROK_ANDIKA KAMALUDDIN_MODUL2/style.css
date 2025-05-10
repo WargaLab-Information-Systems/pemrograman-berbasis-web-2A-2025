@@ -1,0 +1,125 @@
+body{
+    /* margin: 0px; */
+    /* padding: 30 px; */
+    /* padding-top: 0 10px; */
+    padding-bottom:   100px;
+    background-image: url(wooden-board-empty-table-top-blurred-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    padding: 0 0 20px;
+    display: flex;
+    padding-left:100px;
+}
+
+.logo{
+    object-fit: cover;
+    padding-left: 0px;
+    padding-top: 0px;
+    transition: transform 0.3s ease;
+}
+.logo:hover{
+    transform:translateY(-30px);
+}
+.kopi{
+    font-size: 30px;
+    margin-top: 30px;
+    display: inline;
+    font-family: "poppins";
+    margin-left:10px ;
+    color: bisque;
+}
+.list{
+    display: flex;
+    margin-left:35% ;
+}
+nav ul li{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: "poppins";
+    font-weight: bold;
+    color: #222222
+}
+
+nav ul li a:hover{
+    color: #B8001F;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 130px;
+}
+
+.main .text h1{
+    font-size: 60px;
+    font-family:"poppins";
+    position: relative;
+    margin-top: -100px;
+    margin-left: 20px;
+    bottom: 150px;
+    text-shadow: #E9DFC3 0px 0px 10px;
+}
+
+.main .text h1 span{
+    color: brown;
+    text-shadow: white 0px 0px 10px;
+    font-family: "mv boli";
+    line-height: 20px;
+    font-size: 80px;
+}
+.main img{
+    position: relative;
+    bottom: 100px;
+    animation: float 3s linear infinite;
+}
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(3rem);
+    }
+}
+
+.cover1{
+    width: 600px;
+    color: white;
+    text-align: justify;
+    position: relative;
+    left: 70px;
+    bottom: 400px;
+    line-height: 20px;
+}
+.cover2{
+    color: black;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about{
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #90C67C;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    text-align: center;
+}
+.coffee{
+    border-radius: 40px;
+    box-shadow: #ACD3A8 0 0 20px;
+}
+
