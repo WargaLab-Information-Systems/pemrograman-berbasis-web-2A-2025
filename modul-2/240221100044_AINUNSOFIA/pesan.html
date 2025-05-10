@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Now - Tumbuh Cafe</title>
+  <link rel="stylesheet" href="pesan.css">
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <header>
+    <ul>
+      <li><a href="utama.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+    </ul>
+  </header>
+
+  <main class="form-container">
+    <div class="card">
+      <h1>Formulir Pemesanan</h1>
+      <form class="order-form" action="#">
+        <label for="name">Nama Lengkap</label>
+        <input type="text" id="name" name="name" required placeholder="Masukkan nama">
+
+        <p>Menu Minuman</p>
+        <label><input type="checkbox" name="minuman[]" value="Teh Melati"> Teh Melati</label>
+        <label><input type="checkbox" name="minuman[]" value="Lychee Tea"> Lychee Tea</label>
+        <label><input type="checkbox" name="minuman[]" value="Lemon Tea"> Lemon Tea</label>
+        <label><input type="checkbox" name="minuman[]" value="Milk Tea"> Milk Tea</label>
+
+        <p>Menu Makanan</p>
+        <label><input type="checkbox" name="makanan[]" value="Kentang Sore"> Kentang Sore</label>
+        <label><input type="checkbox" name="makanan[]" value="Lintas Senja"> Lintas Senja</label>
+        <label><input type="checkbox" name="makanan[]" value="Serpihan Hutanr"> Serpihan Hutan</label>
+        <label><input type="checkbox" name="makanan[]" value="Cireng Rimba"> Cireng Rimba</label>
+
+        <label for="catatan">Catatan Tambahan</label>
+        <textarea id="catatan" name="catatan" placeholder="Tanpa gula, sedikit es, dll..."></textarea>
+
+        <button type="submit">Kirim Pesanan</button>
+      </form>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    Tumbuh Bersama Alam, Nikmati Setiap Hirupan.
+  </footer>
+</body>
+</html>
