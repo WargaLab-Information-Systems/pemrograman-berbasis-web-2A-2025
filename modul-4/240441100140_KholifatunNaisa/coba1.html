@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SignIn</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    .dark body {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <section class="min-h-screen flex items-center justify-center">
+    <div class="flex flex-col md:flex-row w-full max-w-none shadow-lg overflow-hidden">
+      
+      <div class="bg-purple-700 w-full md:w-1/2 flex items-center justify-center p-8">
+        <img src="Gambar 5.png" alt="Ilustrasi" class="max-w-xs md:max-w-sm">
+      </div>
+
+      <div class="w-full md:w-1/2 p-8 md:p-12">
+        
+        <button id="toggle-mode" onclick="toggleMode()" class="rounded-full bg-purple-600 text-sm px-4 py-1 mb-4 font-medium">
+          Dark Mode
+        </button>
+
+        <img src="logo.png" alt="Logo" class="h-6 mb-6">
+
+        <h2 class="text-xl font-semibold text-gray-800 mb-1">Mulai Hari Ini</h2>
+        <p class="text-gray-500 text-sm mb-8">Menunggu besok? Bisa jadi kamu takkan pernah mulai.</p>
+
+        <form id="SignUpform" class="space-y-4" onsubmit="return false;">
+          <div>
+            <label class="block text-sm text-gray-600 mb-1">Alamat Email</label>
+            <input type="email" id="email" placeholder="Masukkan Alamat Email Anda" class="w-full px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500" />
+            <span id="emailError" class="text-sm text-red-500"></span>
+          </div>
+
+          <div>
+            <label class="block text-sm text-gray-600 mb-1">Nama Lengkap</label>
+            <input type="text" id="name" placeholder="Masukkan Nama Lengkap Anda" class="w-full px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500" />
+            <span id="nameError" class="text-sm text-red-500"></span>
+          </div>
+
+          <div>
+            <label class="block text-sm text-gray-600 mb-1">Password</label>
+            <input type="password" id="password" placeholder="Masukkan Password Anda" class="w-full px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500" />
+            <span id="passwordError" class="text-sm text-red-500"></span>
+          </div>
+
+          <button type="button" id="signUpBtn" class="w-full block bg-purple-600 hover:bg-purple-700 text-white py-2 rounded-full font-semibold text-center">
+            Sign Up
+          </button>
+
+          <button type="button" class="w-full flex items-center justify-center border border-gray-300 py-2 rounded-full text-gray-700 hover:bg-gray-100">
+            <img src="https://www.svgrepo.com/show/355037/google.svg" alt="Google" class="h-5 w-5 mr-2">
+            Sign Up with Google
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleMode() {
+      const html = document.documentElement;
+      const toggleBtn = document.getElementById('toggle-mode');
+
+      html.classList.toggle('dark');
+
+      if (html.classList.contains('dark')) {
+        toggleBtn.textContent = 'Light Mode';
+      } else {
+        toggleBtn.textContent = 'Dark Mode';
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const email = document.getElementById('email');
+      const name = document.getElementById('name');
+      const password = document.getElementById('password');
+
+      const emailError = document.getElementById('emailError');
+      const nameError = document.getElementById('nameError');
+      const passwordError = document.getElementById('passwordError');
+
+      // Validasi saat mengetik
+      name.addEventListener('input', function () {
+        if (!name.value.trim()) {
+          nameError.textContent = 'Nama lengkap harus diisi.';
+        } else {
+          nameError.textContent = '';
+        }
+      });
+
+      email.addEventListener('input', function () {
+        if (!email.value) {
+          emailError.textContent = 'Email harus diisi.';
+        } else if (!/\S+@\S+\.\S+/.test(email.value)) {
+          emailError.textContent = 'Format email tidak valid.';
+        } else {
+          emailError.textContent = '';
+        }
+      });
+
+      password.addEventListener('input', function () {
+        if (!password.value) {
+          passwordError.textContent = 'Password harus diisi.';
+        } else if (password.value.length < 6) {
+          passwordError.textContent = 'Password minimal 6 karakter.';
+        } else {
+          passwordError.textContent = '';
+        }
+      });
+
+      // Tombol Sign Up klik
+      document.getElementById('signUpBtn').addEventListener('click', function () {
+        // Trigger validasi manual
+        name.dispatchEvent(new Event('input'));
+        email.dispatchEvent(new Event('input'));
+        password.dispatchEvent(new Event('input'));
+
+        if (!emailError.textContent && !nameError.textContent && !passwordError.textContent) {
+          // Jika semua valid, lanjut ke halaman berikutnya
+          window.location.href = 'slicing1.html';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
