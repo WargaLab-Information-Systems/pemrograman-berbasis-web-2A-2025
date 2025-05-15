@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SignUp</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+    }
+    .dark body {
+      background-color: black;
+      color: white;
+    }
+    nav {
+      color: black;
+    }
+    .text-white {
+      color: white;
+    }
+    .text-black {
+      color: black;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+  <nav class="sticky top-0 z-50 bg-white dark:bg-gray-800 flex items-center justify-between px-6 py-4 shadow">
+    <img src="logo.png" alt="logo" class="h-10 w-100">
+    <div class="hidden md:flex gap-6 text-sm">
+      <a href="#program" class="hover:text-purple-600 dark:hover:text-purple-300">Program</a>
+      <a href="#mentor" class="hover:text-purple-600 dark:hover:text-purple-300">Mentor</a>
+      <a href="#pricing" class="hover:text-purple-600 dark:hover:text-purple-300">Pricing</a>
+      <a href="#business" class="hover:text-purple-600 dark:hover:text-purple-300">Business</a>
+    </div>
+    
+    <div class="flex items-center gap-4">
+      <div id="gelap" class="block cursor-pointer text-sm font-medium px-3 py-1 rounded-md bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600" onclick="toggleMode()">
+        Mode Gelap
+      </div>
+      <div id="terang" class="hidden cursor-pointer text-sm font-medium px-3 py-1 rounded-md bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600" onclick="toggleMode()">
+        Mode Terang
+      </div>
+      <a href="slicing2.html" class="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-purple-100 hover:text-purple-600">Sign In</a>
+      <a href="slicing1.html" class="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-purple-100 hover:text-purple-600">Sign Up</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="px-6 py-16">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8 ml-10">
+      <div class="text-center md:text-left md:w-1/2">
+        <h1 class="text-4xl font-bold p-1">
+          Buka Karir <span class="text-purple-600">Teknologi</span> Anda dengan ByteAcademy
+        </h1>
+        <p class="mt-4 max-w-200 p-65">Pelajari coding, ilmu data, dan keamanan siber dari para pakar industri. Bangun keterampilan di dunia nyata dan luncurkan masa depan Anda di bidang teknologi.</p>
+        <a href="#program" class="mt-6 inline-block bg-purple-600 text-white px-6 py-3 rounded-lg">Get Started</a>
+      </div>
+      <img src="Gambar 1.png" alt="gambar1" class="w-64 h-auto mx-auto md:mx-0" />
+    </div>
+  </section>
+
+<!-- Program Section -->
+<section id="program" class="px-6 py-12">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-lg font-semibold text-green-600 mb-2 mt-5">Kenapa Pilih Kami?</h2>
+    <p class="mb-10">Karena Belajar Bisa Lebih Cepat & Menyenangkan!</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-sm text-left">
+      <div class="flex items-start space-x-4">
+        <div>
+          <img src="Icon 1.png" alt="Overview Materi" class="bg-green-500 rounded-full p-3 w-16 h-16 object-contain mb-3">
+          <h2 class="text-base font-semibold mb-1">Diversity</h2>
+          <p>Belajar dari siapa pun di seluruh dunia dan dapatkan keterampilan baru</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4">
+        <div>
+          <img src="Icon 2.png" alt="AI Guidance" class="bg-purple-600 rounded-full mb-3 p-3 w-16 h-16 object-contain">
+          <h2 class="text-base font-semibold mb-1">A.I Guideline</h2>
+          <p>ByteAcademy akan membantu Anda memilih jalur mana yang cocok untuk anda</p>
+        </div>
+      </div>
+
+      <div class="flex items-start space-x-4">
+        <div>
+          <img src="Icon 3.png" alt="1-on-1 Mentoring" class="bg-green-500 rounded-full mb-3 p-3 w-16 h-16 object-contain">
+          <h2 class="text-base font-semibold mb-1">1-1 Mentoring</h2>
+          <p>Kami akan memastikan bahwa Anda akan mendapatkan apa yang benar-benar Anda butuhkan</p>
+        </div>
+      </div>
+
+      <div class="flex items-start space-x-4">
+        <div>
+          <img src="Icon 4.png" alt="Future Job" class="bg-purple-600 rounded-full mb-3 p-3 w-16 h-16 object-contain">
+          <h2 class="text-base font-semibold mb-1">Future Job</h2>
+          <p>Raih pekerjaan impian Anda di perusahaan impian bersama kami</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Mentor Section -->
+  <section id="mentor" class="px-6 py-20">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <img src="Gambar 2.png" alt="Belajar" />
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Ubah Passion Anda Menjadi Keterampilan Teknologi Nyata</h3>
+        <p>Buka potensi Anda dan dapatkan pengalaman langsung di bidang coding, data science, dan cybersecurity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-6 py-16 ">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Belajar dari Ahli Industri dan Bangun Masa Depan Anda</h3>
+        <p>Dapatkan wawasan dan bimbingan dari profesional untuk memulai karir Anda di dunia teknologi.</p>
+      </div>
+      <img src="Gambar 3.png" alt="Instruktur"/>
+    </div>
+    <div class="grid md:grid-cols-2 gap-10 items-center mt-12">
+      <img src="Gambar 4.png" alt="Praktik Coding"/>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Dapatkan Pengalaman Praktis untuk Sukses di Coding, Data Science, dan Cybersecurity</h3>
+        <p>Persiapkan diri dengan proyek dan keterampilan dunia nyata yang dibutuhkan oleh perusahaan di industri teknologi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="bg-gradient-to-r from-purple-700 to-purple-500 text-white px-6 py-40">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">
+          Mulailah Transformasi Anda dengan Byte Academy
+        </h2>
+        <p class="mb-6 text-gray-200">
+          Kami memiliki beberapa rencana yang mungkin cocok untuk Anda.<br />
+          Silakan unduh syallabus lengkap kami di bawah ini.
+        </p>
+        <a href="#pricing" class="inline-block text-purple-700 font-medium px-5 py-3 rounded-lg shadow bg-white hover:bg-gray-200">
+          Lihat Syllabus
+        </a>
+      </div>
+      <div class="bg-white text-gray-800 rounded-xl shadow-lg p-10 md:p-7 space-y-5 max-w-sm mx-auto">
+        <p class="text-green-500 font-semibold">BARU MULAI</p> 
+        <h3 class="text-2xl font-bold">Rp.2.350.000</h3>
+        <div class="space-y-2">
+          <div class="flex items-center">
+            <img src="centang.png" alt="centang" class="bg-green-500 rounded-full h-5 w-5 p-1">
+            <span class="ml-2">Program Mentoring 1-1</span>
+          </div>
+          <div class="flex items-center">
+            <img src="centang.png" alt="centang" class="bg-green-500 rounded-full h-5 w-5 p-1">
+            <span class="ml-2">Sertifikat Proyek Akhir</span>
+          </div>
+          <div class="flex items-center">
+            <img src="centang.png" alt="centang" class="bg-green-500 rounded-full h-5 w-5 p-1">
+            <span class="ml-2">Video Kursus Offline</span>
+          </div>
+          <div class="flex items-center">
+            <img src="centang.png" alt="centang" class="bg-green-500 rounded-full h-5 w-5 p-1">
+            <span class="ml-2">Menambah Portofolio</span>
+          </div>
+          <a class="block text-center bg-purple-100 text-purple-700 font-medium px-5 py-2 rounded-lg mt-4">
+            Mulailah Dengan Rencana Ini
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="business" class=" border-t border-purple-100 mt-12">
+    <div class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+      <div>
+        <div class="flex items-center mb-4">
+          <img src="Logo-.png" alt="ByteAcademy Logo" class="w-6 h-6 mr-2" />
+          <span class="font-semibold text-lg ">ByteAcademy</span>
+        </div>
+        <p>Persiapkan Diri Anda untuk Masa Depan dengan<br />Pembelajaran Spesifik Industri di Byte Academy</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Bisnis Byte</h4>
+        <div class="space-y-2">
+          <p class="block hover:underline">Teknologi di ByteAcademy</p>
+          <p class="block hover:underline">Unduh Aplikasinya</p>
+          <p class="block hover:underline">Tentang Kami</p>
+          <p class="block hover:underline">Hubungi Kami</p>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Karir</h4>
+        <div class="space-y-2">
+          <p class="block hover:underline">Blog</p>
+          <p class="block hover:underline">Bantuan dan Dukungan</p>
+          <p class="block hover:underline">Afiliasi</p>
+          <p class="block hover:underline">Investasi</p>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Syarat dan Ketentuan</h4>
+        <div class="space-y-2">
+          <p class="block hover:underline">Kebijakan Privasi</p>
+          <p class="block hover:underline">Pengaturan Cookie</p>
+          <p class="block hover:underline">Peta Situs</p>
+          <p class="block hover:underline">Aksesibilitas</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-xs py-4 border-t border-gray-200">
+      © 2025 ByteAcademy. All rights reserved. Designed by Erlangga Satrya Husada.
+    </div>
+  </footer>
+
+  <script>
+    function toggleMode() {
+      const html = document.documentElement;
+      const gelap = document.getElementById('gelap');
+      const terang = document.getElementById('terang');
+
+      html.classList.toggle('dark');
+      
+      const isDark = html.classList.contains('dark');
+      if (isDark) {
+        gelap.classList.add('hidden');
+        terang.classList.remove('hidden');
+      } else {
+        terang.classList.add('hidden');
+        gelap.classList.remove('hidden');
+      }
+    }
+  </script>
+
+</body>
+</html>
