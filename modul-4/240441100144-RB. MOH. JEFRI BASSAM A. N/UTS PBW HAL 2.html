@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS PBW HAL 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const email = document.getElementById('email');
+            const name = document.getElementById('name');
+            const password = document.getElementById('password');
+
+            const emailError = document.getElementById('emailError');
+            const nameError = document.getElementById('nameError');
+            const passwordError = document.getElementById('passwordError');
+
+            name.addEventListener('input', function() {
+                if (!name.value.trim()) {
+                    nameError.textContent = 'Nama lengkap harus diisi.';
+                } else {
+                    nameError.textContent = '';
+                }
+            });
+
+            email.addEventListener('input', function() {
+                if (!email.value) {
+                    emailError.textContent = 'Email harus diisi.';
+                } else if (!/\S+@\S+\.\S+/.test(email.value)) {
+                    emailError.textContent = 'Format email tidak valid.';
+                } else {
+                    emailError.textContent = '';
+                }
+            });
+
+            password.addEventListener('input', function() {
+                if (!password.value) {
+                    passwordError.textContent = 'Password harus diisi.';
+                } else if (password.value.length < 6) {
+                    passwordError.textContent = 'Password minimal 6 karakter.';
+                } else {
+                    passwordError.textContent = '';
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class=" flex items-center justify-center">
+        <div class="w-full shadow-lg flex flex-col md:flex-row">
+
+            <div class="bg-purple-700 flex items-center justify-center p-10 md:w-1/2">
+                <img src="Gambar 5.png" alt="Belajar">
+            </div>
+
+            <div class="w-full md:w-1/2 p-8 md:p-12">
+                <div class="text-right">
+                    <button onclick="toggleMode()" class=" hover:text-purple-500 rounded-2xl p-3 transition text-200">Ubah Mode </button>
+                    <style>
+                        .dark-mode {
+                            background-color: black;
+                            color: white;
+                        }
+                    </style>
+
+                    <script>
+                        function toggleMode() {
+                            document.body.classList.toggle("dark-mode");
+                        }
+                        
+                    </script>              
+                </div>
+
+
+                <div class="mb-6">
+                    <img src="logo.png" alt="logo" class="w-35 h-7">
+                    <h3 class="text-xl font-semibold">Mulai Hari Ini</h3>
+                    <p class="text-sm">Menunggu besok? Bisa jadi kamu takkan pernah mulai.</p>
+                </div>
+
+                <form class="space-y-4">
+                    <div>
+                        <label class="text-sm font-medium">Alamat Email</label>
+                        <input type="email" id="email" placeholder="Masukkan Alamat Email Anda"
+                            class="w-full placeholder-gray-400 px-6 py-2 mt-1 rounded-full border border-gray-300 focus:ring-1 focus:outline-none focus:ring-purple-500" />
+                        <p id="emailError" class="text-sm text-red-600 mt-1"></p>
+                    </div>
+
+                    <div>
+                        <label class="text-sm font-medium">Nama Lengkap</label>
+                        <input type="text" id="name" placeholder="Masukkan Nama Lengkap Anda"
+                            class="w-full placeholder-gray-400 px-6 py-2 mt-1 rounded-full border border-gray-300 focus:ring-1 focus:outline-none focus:ring-purple-500" />
+                        <p id="nameError" class="text-sm text-red-600 mt-1"></p>
+                    </div>
+
+                    <div>
+                        <label class="text-sm font-medium">Password</label>
+                        <input type="password" id="password" placeholder="Masukkan Password Anda"
+                            class="w-full placeholder-gray-400 px-6 py-2 mt-1 rounded-full border border-gray-300 focus:ring-1 focus:outline-none focus:ring-purple-500" />
+                        <p id="passwordError" class="text-sm text-red-600 mt-1"></p>
+                    </div>
+
+                    <button type="submit" class="w-full bg-purple-600 hover:bg-purple-900 text-white font-semibold py-2 rounded-full transition">Sign Up</button>
+
+                    <button type="button"
+                        class="w-full border border-gray-300 hover:bg-gray-100 py-2 rounded-full flex items-center justify-center gap-2">
+                        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="w-5 h-5" />
+                        <span class="text-sm font-medium">Sign Up with Google</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
