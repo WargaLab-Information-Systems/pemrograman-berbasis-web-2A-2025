@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShafaResto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full  shadow-md z-50">
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-orange-500">🍽 Shafa<span class="text-gray-900">Resto</span></h1>
+      <nav class="space-x-6 text-sm font-medium hidden md:block">
+        <a href="#home" class="text-gray-700 hover:text-orange-500">Home </a>
+        <a href="#Menu" class="text-gray-700 hover:text-orange-500">Menu</a>
+        <a href="#About" class="text-gray-700 hover:text-orange-500">About</a>
+        <a href="#Contact" class="text-gray-700 hover:text-orange-500">Contact</a>
+      </nav>
+    </div>
+  </header>
+  </nav>
+
+  <!-- Halaman Depan -->
+  <section class="bg-yellow-50 py-16">
+    <p id="home"><div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-10"></div></p>
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+      <div>
+        <h2 class="text-4xl font-bold mb-4">All in Good Taste Food<br>With <span class="text-orange-500">ShafaResto</span></h2>
+        <p class="mb-6 text-gray-600">"Shafa Restaurant offers delicious Indonesian and Asian food in a warm and cozy setting perfect for families and friends 😇".</p>
+        
+      </div>
+      <div>
+        <img src="gambar/kentang home.jpg" alt="Burger" class="w-60 rounded-full border-4 mx-auto  ">
+      </div>
+    </div>
+  </section>
+
+  <!-- fitur  layanan-->
+  <section class="py-14 bg-white">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 text-center gap-10">
+      <div>
+        <img src="gambar/easy ordeer.jpg" class="w-20 mx-auto mb-4" />
+        <h4 class="font-semibold">Easy to Order</h4>
+      </div>
+      <div>
+        <img src="gambar/deliv icon.jpg" class="w-16 mx-auto mb-4" />
+        <h4 class="font-semibold">Fastest Delivery</h4>
+      </div>
+      <div>
+        <img src="gambar/bestquality.jpg" class="w-16 mx-auto mb-4" />
+        <h4 class="font-semibold">Best Quality</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Products -->
+  <section class="bg-gray-50 py-16">
+    <div id="Menu" class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">Most <span class="text-orange-500">Popular</span> Food</h2>
+      <p class="text-gray-600 mb-10">Check out our top selling dishes loved by customers </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Product 1 -->
+        <div class="bg-white rounded-xl shadow p-4">
+          <img src="gambar/burger.jpg" class="rounded-md mb-4 w-full h-48 object-cover">
+          <h4 class="font-semibold mb-1">Burger</h4>
+          <p class="text-sm text-gray-600">$30</p>
+          <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full">Buy Now</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="bg-white rounded-xl shadow p-4">
+          <img src="gambar/kentang.jpg" class="rounded-md mb-4 w-full h-48 object-cover">
+          <h4 class="font-semibold mb-1">Potatoes</h4>
+          <p class="text-sm text-gray-600">$25</p>
+          <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full">Buy Now</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="bg-white rounded-xl shadow p-4">
+          <img src="gambar/es coklt.jpg" class="rounded-md mb-4 w-full h-48 object-cover">
+          <h4 class="font-semibold mb-1">ice chocholate</h4>
+          <p class="text-sm text-gray-600">$40</p>
+          <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="bg-yellow-100 py-16">
+    <div id="About" class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      <img src="gambar/chicken.jpg" alt="About Us" class="w-60 rounded-lg shadow-md">
+      <div>
+        <h3 class="text-3xl font-bold mb-4">About <span class="text-orange-500">Shafa Resto</span></h3>
+        <p class="text-gray-700 mb-4"> Chicken Katsu  is a Japanese-style breaded and deep-fried chicken cutlet, crispy on the outside and tender on the inside, typically served with rice and tonkatsu sauce.</p>
+        <p class="text-gray-700">Customer satisfaction is our top priority. Try our specialties and taste the difference.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t py-6 mt-10">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+      <p>&copy; 2025 Tsabita Shafa Aurellia. All rights reserved.</p>
+      <div class="space-x-4 mt-4 md:mt-0">
+        <a href="#" class="hover:text-orange-500">Privacy</a>
+        <a href="#" class="hover:text-orange-500">Terms</a>
+        <a href="#" class="hover:text-orange-500">Support</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
